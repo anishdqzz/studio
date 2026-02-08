@@ -22,7 +22,7 @@ export default function Home() {
         ))}
       </div>
 
-      <main className="relative z-10 text-center space-y-6 animate-fade-in px-4">
+      <main className="relative z-10 text-center space-y-8 animate-fade-in px-4">
         <div className="mb-4 flex justify-center">
           <Heart className="w-16 h-16 text-accent animate-pulse" fill="currentColor" />
         </div>
@@ -33,11 +33,11 @@ export default function Home() {
         
         <div className="h-px w-24 bg-accent/30 mx-auto my-4" />
         
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-4xl mx-auto space-y-4">
           <p className="text-2xl md:text-3xl font-headline italic text-accent animate-fade-in [animation-delay:400ms]">
             happy valentine&apos;s day my dear loved one
           </p>
-          <p className="text-1xl md:text-2Dxl font-headline italic text-accent animate-fade-in [animation-delay:200ms]">
+          <p className="text-xs md:text-sm font-body font-bold text-black tracking-[0.3em] uppercase animate-fade-in [animation-delay:600ms] whitespace-nowrap overflow-x-auto no-scrollbar">
             CHINJU | SWOTHTHU | MUWTHEY | BHARIYA | VAVOO | DARLING | MINION | AZHAGI | RAKSHASHI | MILMA 
           </p>
         </div>
