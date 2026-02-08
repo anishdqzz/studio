@@ -34,8 +34,8 @@ export default function Home() {
         <div className="h-px w-32 bg-rose-300 mx-auto animate-scale-in [animation-delay:400ms]" />
         
         <div className="max-w-4xl mx-auto space-y-8">
-          <p className="text-xl md:text-2xl font-headline italic text-rose-700 animate-slide-up [animation-delay:600ms]">
-            happy valentine's day my dear loved one
+          <p className="text-xl md:text-2xl font-headline italic text-rose-700 animate-slide-up [animation-delay:600ms] whitespace-nowrap">
+            happy velantines day my dear tiny bharii i love you dii chinjuu
           </p>
           
           <div className="py-4 border-y border-rose-200/50 animate-slide-up [animation-delay:800ms]">
