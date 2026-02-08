@@ -22,16 +22,25 @@ export default function Home() {
         ))}
       </div>
 
-      <main className="relative z-10 text-center space-y-8 animate-fade-in px-4">
-        <div className="mb-8 flex justify-center">
-          <Heart className="w-20 h-20 text-accent animate-pulse" fill="currentColor" />
+      <main className="relative z-10 text-center space-y-6 animate-fade-in px-4">
+        <div className="mb-4 flex justify-center">
+          <Heart className="w-16 h-16 text-accent animate-pulse" fill="currentColor" />
         </div>
         
-        <h1 className="text-7xl md:text-[10rem] font-headline text-foreground drop-shadow-sm italic tracking-tighter leading-none">
+        <h1 className="text-6xl md:text-9xl font-headline text-foreground drop-shadow-sm italic tracking-tighter leading-none">
           Muthu & Anish
         </h1>
         
-        <div className="h-px w-32 bg-accent/30 mx-auto" />
+        <div className="h-px w-24 bg-accent/30 mx-auto my-4" />
+        
+        <div className="max-w-lg mx-auto">
+          <p className="text-2xl md:text-3xl font-headline italic text-accent animate-fade-in [animation-delay:400ms]">
+            happy velantines day my dear tiny bharii
+          </p>
+          <p className="text-xl md:text-2xl font-body mt-2 text-muted-foreground animate-fade-in [animation-delay:600ms]">
+            i love you dii chinjuu
+          </p>
+        </div>
       </main>
 
       <Navigation />
