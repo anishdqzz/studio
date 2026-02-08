@@ -4,7 +4,7 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const timelineEvents = [
   {
-    date: "August 15, 2022",
+    date: "",
     title: "The Day We Met",
     description: "It felt like the stars aligned. We talked for hours at that little coffee shop, and I knew right then you were special.",
     imageId: "memory1"

@@ -5,20 +5,20 @@ import { Badge } from "@/components/ui/badge";
 
 const specialDates = [
   {
-    title: "Our Anniversary",
+    title: "Our Love Anniversary",
     date: "April 28",
     type: "The Big Day",
     icon: Heart,
     color: "bg-red-100 text-red-600",
-    description: "The day Muthu and Anish officially started their journey together. The beginning of forever."
+    description: "We officially started their journey together. The beginning of forever."
   },
   {
-    title: "Muthu's Birthday",
+    title: "Chinju's Birthday",
     date: "September 12",
     type: "Celebration",
     icon: Gift,
     color: "bg-blue-100 text-blue-600",
-    description: "Celebrating the birth of Muthu (2006). The day the world became a more beautiful place."
+    description: "The day the world became a more beautiful place."
   },
   {
     title: "Anish's Birthday",
@@ -26,7 +26,7 @@ const specialDates = [
     type: "Celebration",
     icon: Cake,
     color: "bg-pink-100 text-pink-600",
-    description: "Celebrating the person who brought light and laughter into Muthu's life (2002)."
+    description: "Celebrating the person who brought light and laughter into Muthu's life."
   },
   {
     title: "Forever & Always",
@@ -34,7 +34,7 @@ const specialDates = [
     type: "Eternal",
     icon: Sparkles,
     color: "bg-yellow-100 text-yellow-600",
-    description: "Every single sunrise shared is a milestone in the beautiful love story of Muthu and Anish."
+    description: "Every single sunrise shared is a milestone in the beautiful of our love story."
   }
 ];
 
