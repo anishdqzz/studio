@@ -36,10 +36,10 @@ export default function Home() {
         ))}
       </div>
 
-      <main className="relative z-20 text-center space-y-12 px-4 max-w-full">
-        {/* Names with elegant decent font style and letter spacing */}
-        <h1 className="text-5xl md:text-8xl font-headline text-black drop-shadow-md leading-tight animate-slide-up [animation-delay:200ms] py-4 tracking-[0.3em] uppercase">
-          MUTHU & ANISH
+      <main className="relative z-20 text-center space-y-12 px-4 max-w-full pt-20">
+        {/* Names with elegant decent font style, black color, and pipe separator */}
+        <h1 className="text-5xl md:text-8xl font-headline text-black drop-shadow-md leading-tight animate-slide-up [animation-delay:200ms] py-4 tracking-[0.3em] uppercase mt-20">
+          MUTHU | ANISH
         </h1>
         
         <div className="h-px w-48 bg-rose-400/40 mx-auto animate-scale-in [animation-delay:400ms]" />
