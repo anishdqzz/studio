@@ -22,11 +22,11 @@ const specialDates = [
   },
   {
     title: "Anish's Birthday",
-    date: "November 23",
+    date: "July 05",
     type: "Celebration",
     icon: Cake,
     color: "bg-pink-100 text-pink-600",
-    description: "Celebrating the person who brought light and laughter into Muthu's life."
+    description: "Celebrating the person who brought light and laughter into Muthu's life (2002)."
   },
   {
     title: "Forever & Always",
