@@ -31,9 +31,9 @@ export default function Home() {
         <div className="h-px w-32 bg-rose-300 mx-auto animate-scale-in [animation-delay:400ms]" />
         
         <div className="max-w-4xl mx-auto space-y-8">
-          {/* Updated Valentine message in a single line */}
+          {/* Personalized Valentine message in a single line */}
           <p className="text-xl md:text-2xl font-headline italic text-rose-700 animate-slide-up [animation-delay:600ms] whitespace-nowrap">
-            happy valentine's day my dear loved one .
+            happy velantines day my dear tiny bharii i love you dii chinjuu
           </p>
           
           {/* Nicknames list in a single line, black color, with letter spacing */}

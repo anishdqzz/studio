@@ -48,9 +48,9 @@ export function Navigation() {
         <ChevronUp className="w-6 h-6" />
       </button>
 
-      {/* Horizontal Navigation Bar positioned 100px from the left */}
+      {/* Horizontal Navigation Bar centered at the bottom */}
       <nav className={cn(
-        "fixed bottom-8 left-[100px] z-50 px-6 py-3 bg-white/70 backdrop-blur-xl border border-rose-200/50 rounded-full shadow-2xl flex items-center gap-2 sm:gap-6 transition-all duration-500 animate-fade-in"
+        "fixed bottom-8 left-1/2 -translate-x-1/2 z-50 px-6 py-3 bg-white/70 backdrop-blur-xl border border-rose-200/50 rounded-full shadow-2xl flex items-center gap-2 sm:gap-6 transition-all duration-500 animate-fade-in"
       )}>
         {navItems.map((item) => {
           const isActive = pathname === item.href;
