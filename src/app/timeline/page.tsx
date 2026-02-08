@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import { Navigation } from "@/components/Navigation";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
@@ -17,7 +16,7 @@ const timelineEvents = [
     imageId: "memory2"
   },
   {
-    date: "June 12, 2023",
+    date: "April 28, 2023",
     title: "Our First Anniversary",
     description: "A beautiful dinner by the lake. One year of growth, love, and building our future together.",
     imageId: "memory3"

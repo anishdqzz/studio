@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 const specialDates = [
   {
     title: "Our Anniversary",
-    date: "June 12",
+    date: "April 28",
     type: "The Big Day",
     icon: Heart,
     color: "bg-red-100 text-red-600",
