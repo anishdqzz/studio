@@ -14,8 +14,8 @@ import image11 from './IMG-20260127-WA0010.jpg.jpeg';
 import image12 from './IMG_20251112_130039 (2).png';
 import image13 from './IMG_20240903_164945_031.webp';
 
-// Note: Videos MUST be placed in the /public folder at the root of the project
-// In Next.js, files in /public are accessed via the root path (e.g., /video.mp4)
+// Note: Videos MUST be placed in the /public folder at the root of the project.
+// Access them using a leading slash (e.g., /video.mp4)
 const video1Path = '/InShot_20260116_204119246.mp4';
 const video2Path = '/VID-20260105-WA0005.mp4';
 

@@ -21,7 +21,6 @@ export default function GalleryPage() {
 
         <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
           {galleryItems.map((item, index) => {
-            // Helper to get the correct URL string whether it's an imported object or a string path
             const mediaUrl = typeof item.imageUrl === 'string' ? item.imageUrl : item.imageUrl?.src || '';
 
             return (
@@ -38,7 +37,9 @@ export default function GalleryPage() {
                         className="w-full h-full object-cover"
                         controls
                         playsInline
-                        preload="metadata"
+                        muted
+                        loop
+                        preload="auto"
                       >
                         <source src={mediaUrl} type="video/mp4" />
                         Your browser does not support the video tag.
