@@ -1,4 +1,3 @@
-
 "use client";
 
 import Link from "next/link";
@@ -17,8 +16,10 @@ const navItems = [
 export function Navigation() {
   const pathname = usePathname();
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 300);
     };
@@ -30,13 +31,16 @@ export function Navigation() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  if (!mounted) return null;
+
   return (
     <>
       {/* Standard Circular Scroll to Top Button */}
       <button
         onClick={scrollToTop}
+        aria-label="Scroll to top"
         className={cn(
-          "fixed bottom-24 right-6 z-50 p-4 bg-rose-500 text-white transition-all duration-500 hover:scale-110 active:scale-95 shadow-lg rounded-full",
+          "fixed bottom-24 right-6 z-50 p-4 bg-rose-500 text-white transition-all duration-500 hover:scale-110 active:scale-95 shadow-lg rounded-full animate-slide-up",
           "flex items-center justify-center h-14 w-14",
           showScrollTop ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none"
         )}
@@ -44,7 +48,9 @@ export function Navigation() {
         <ChevronUp className="w-6 h-6" />
       </button>
 
-      <nav className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 px-4 py-3 bg-white/60 backdrop-blur-xl border border-rose-200/50 rounded-full shadow-2xl flex items-center gap-2 sm:gap-4 max-w-[95vw] overflow-x-auto no-scrollbar">
+      <nav className={cn(
+        "fixed bottom-6 left-1/2 -translate-x-1/2 z-50 px-4 py-3 bg-white/70 backdrop-blur-xl border border-rose-200/50 rounded-full shadow-2xl flex items-center gap-2 sm:gap-4 max-w-[95vw] overflow-x-auto no-scrollbar transition-all duration-1000 animate-slide-up delay-300"
+      )}>
         {navItems.map((item) => {
           const isActive = pathname === item.href;
           const Icon = item.icon;

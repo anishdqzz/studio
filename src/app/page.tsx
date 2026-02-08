@@ -3,7 +3,7 @@ import { Heart } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-rose-100 via-pink-50 to-rose-200 flex flex-col items-center justify-center relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-rose-100 via-pink-50 to-rose-200 flex flex-col items-center justify-center relative overflow-hidden select-none">
       {/* Animated Floating Hearts Background */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {[...Array(25)].map((_, i) => (
@@ -22,24 +22,24 @@ export default function Home() {
         ))}
       </div>
 
-      <main className="relative z-10 text-center space-y-12 animate-fade-in px-4">
-        <div className="mb-4 flex justify-center">
+      <main className="relative z-10 text-center space-y-12 px-4 max-w-full">
+        <div className="mb-4 flex justify-center animate-scale-in">
           <Heart className="w-20 h-20 text-rose-500 animate-pulse" fill="currentColor" />
         </div>
         
-        <h1 className="text-7xl md:text-9xl font-headline text-rose-950 drop-shadow-sm italic tracking-tighter leading-none">
+        <h1 className="text-7xl md:text-9xl font-headline text-rose-950 drop-shadow-sm italic tracking-tighter leading-none animate-slide-up [animation-delay:200ms]">
           Muthu & Anish
         </h1>
         
-        <div className="h-px w-32 bg-rose-300 mx-auto" />
+        <div className="h-px w-32 bg-rose-300 mx-auto animate-scale-in [animation-delay:400ms]" />
         
         <div className="max-w-4xl mx-auto space-y-8">
-          <p className="text-xl md:text-2xl font-headline italic text-rose-700 animate-fade-in [animation-delay:400ms]">
-            happy velantines day my dear tiny bharii i love you dii chinjuu
+          <p className="text-xl md:text-2xl font-headline italic text-rose-700 animate-slide-up [animation-delay:600ms]">
+            happy valentine's day my dear loved one
           </p>
           
-          <div className="py-4 border-y border-rose-200/50">
-            <p className="text-[10px] md:text-sm font-body font-bold text-black tracking-[0.4em] uppercase animate-fade-in [animation-delay:600ms] whitespace-nowrap overflow-x-auto no-scrollbar px-4">
+          <div className="py-4 border-y border-rose-200/50 animate-slide-up [animation-delay:800ms]">
+            <p className="text-[10px] md:text-sm font-body font-bold text-black tracking-[0.4em] uppercase whitespace-nowrap overflow-x-auto no-scrollbar px-4">
               CHINJU | SWOTHTHU | MUWTHEY | BHARIYA | VAVOO | DARLING | MINION | AZHAGI | RAKSHASHI | MILMA 
             </p>
           </div>
