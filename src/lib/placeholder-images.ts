@@ -13,8 +13,10 @@ import image10 from './Picsart_26-01-06_08-15-42-977.jpg.jpeg';
 import image11 from './IMG-20260127-WA0010.jpg.jpeg';
 import image12 from './IMG_20251112_130039 (2).png';
 import image13 from './IMG_20240903_164945_031.webp';
-import video1 from './InShot_20260116_204119246.mp4';
-import video2 from './VID-20260105-WA0005.mp4';
+
+// Note: Videos are referenced by their public path to avoid module type errors
+const video1Path = '/InShot_20260116_204119246.mp4';
+const video2Path = '/VID-20260105-WA0005.mp4';
 
 export type ImagePlaceholder = {
   id: string;
@@ -38,8 +40,8 @@ const mediaMap: Record<string, any> = {
   gallery11: image11,
   gallery12: image12,
   gallery13: image13,
-  video1: video1,
-  video2: video2,
+  video1: video1Path,
+  video2: video2Path,
 };
 
 export const PlaceHolderImages: ImagePlaceholder[] = data.placeholderImages.map(img => ({
