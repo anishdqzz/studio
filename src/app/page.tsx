@@ -48,7 +48,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto space-y-8">
           {/* Personalized Valentine message */}
           <p className="text-xl md:text-2xl font-headline text-rose-800 animate-slide-up [animation-delay:600ms] tracking-wide font-bold drop-shadow-sm">
-            happy velantines day my dear tiny bharii i love you dii chinjuu
+            Happy Velantines Day My Dear Sweety | I Love You Di Chinju
           </p>
           
           {/* Nicknames list in a single line, black color, with letter spacing */}
