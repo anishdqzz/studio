@@ -1,0 +1,47 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "A romantic couple walking at sunset",
+      "imageUrl": "https://picsum.photos/seed/love-hero/1200/600",
+      "imageHint": "couple sunset"
+    },
+    {
+      "id": "memory1",
+      "description": "First date at the park",
+      "imageUrl": "https://picsum.photos/seed/first-date/600/400",
+      "imageHint": "picnic park"
+    },
+    {
+      "id": "memory2",
+      "description": "Our first trip together",
+      "imageUrl": "https://picsum.photos/seed/first-trip/600/400",
+      "imageHint": "beach travel"
+    },
+    {
+      "id": "memory3",
+      "description": "Celebrated our anniversary",
+      "imageUrl": "https://picsum.photos/seed/anniversary/600/400",
+      "imageHint": "candle dinner"
+    },
+    {
+      "id": "gallery1",
+      "description": "Smiling together in autumn",
+      "imageUrl": "https://picsum.photos/seed/autumn-smile/400/500",
+      "imageHint": "couple autumn"
+    },
+    {
+      "id": "gallery2",
+      "description": "Holding hands by the lake",
+      "imageUrl": "https://picsum.photos/seed/holding-hands/400/500",
+      "imageHint": "holding hands"
+    },
+    {
+      "id": "gallery3",
+      "description": "Laughter in the rain",
+      "imageUrl": "https://picsum.photos/seed/rain-laugh/400/500",
+      "imageHint": "couple rain"
+    }
+  ]
+}
