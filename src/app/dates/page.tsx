@@ -1,5 +1,5 @@
 import { Navigation } from "@/components/Navigation";
-import { Calendar, Cake, Star, Heart } from "lucide-react";
+import { Calendar, Cake, Star, Heart, Music, Sparkles } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
@@ -7,59 +7,69 @@ const specialDates = [
   {
     title: "Our Anniversary",
     date: "June 12",
-    type: "Love",
+    type: "The Big Day",
     icon: Heart,
-    description: "The day Muthu and Anish officially became a couple."
+    color: "bg-red-100 text-red-600",
+    description: "The day Muthu and Anish officially became a couple. The beginning of forever."
   },
   {
     title: "Anish's Birthday",
     date: "November 23",
-    type: "Birthday",
+    type: "Celebration",
     icon: Cake,
-    description: "Celebrating the most amazing person in the world."
+    color: "bg-pink-100 text-pink-600",
+    description: "Celebrating the birth of the person who brought light into Muthu's life."
   },
   {
-    title: "First Trip Anniversary",
-    date: "December 28",
-    type: "Travel",
-    icon: Star,
-    description: "When we saw the ocean together for the first time."
+    title: "Our First Dance",
+    date: "September 05",
+    type: "Memory",
+    icon: Music,
+    color: "bg-purple-100 text-purple-600",
+    description: "That magical evening where the world stopped, and it was just us."
   },
   {
-    title: "Proposal Anniversary",
-    date: "Pending...",
-    type: "Future",
-    icon: Calendar,
-    description: "A beautiful day still to come for us."
+    title: "Forever & Always",
+    date: "Every Day",
+    type: "Eternal",
+    icon: Sparkles,
+    color: "bg-yellow-100 text-yellow-600",
+    description: "Every single sunrise we share is a milestone in our love story."
   }
 ];
 
 export default function DatesPage() {
   return (
-    <div className="min-h-screen pb-32 pt-16 bg-background">
-      <div className="max-w-4xl mx-auto px-6">
-        <header className="mb-12 text-center animate-fade-in">
-          <h1 className="text-5xl font-headline text-foreground mb-4">Our Milestones</h1>
-          <p className="text-lg text-muted-foreground">Every day for Muthu and Anish is a gift.</p>
+    <div className="min-min-h-screen pb-32 pt-24 bg-gradient-to-br from-background to-secondary/30">
+      <div className="max-w-5xl mx-auto px-6">
+        <header className="mb-20 text-center animate-fade-in">
+          <Badge variant="outline" className="mb-4 px-4 py-1 border-primary text-primary font-bold">CALENDAR OF LOVE</Badge>
+          <h1 className="text-6xl font-headline text-foreground mb-6 italic">Our Precious Moments</h1>
+          <p className="text-xl text-muted-foreground max-w-xl mx-auto font-body">
+            Marking the days that changed our lives forever. Every date is a treasure for Muthu and Anish.
+          </p>
         </header>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {specialDates.map((item, index) => {
             const Icon = item.icon;
             return (
-              <Card key={index} className="border-primary/10 hover:border-accent/40 hover:shadow-lg transition-all duration-300">
-                <CardHeader className="flex flex-row items-center justify-between pb-2">
-                  <div className="p-2 bg-primary/10 rounded-full">
-                    <Icon className="w-5 h-5 text-accent" />
+              <Card key={index} className="group border-none shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden bg-white/80 backdrop-blur-sm">
+                <div className={`h-2 w-full ${item.color.split(' ')[0]}`} />
+                <CardHeader className="flex flex-row items-center justify-between pb-4">
+                  <div className={`p-4 rounded-2xl ${item.color} group-hover:scale-110 transition-transform duration-500`}>
+                    <Icon className="w-8 h-8" />
                   </div>
-                  <Badge variant="secondary" className="bg-primary/20 text-primary-foreground">
+                  <Badge variant="secondary" className="bg-primary/10 text-primary hover:bg-primary/20">
                     {item.type}
                   </Badge>
                 </CardHeader>
-                <CardContent>
-                  <h3 className="text-xl font-headline italic mb-1">{item.title}</h3>
-                  <p className="text-accent font-bold mb-3">{item.date}</p>
-                  <p className="text-muted-foreground text-sm font-body">{item.description}</p>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h3 className="text-3xl font-headline italic mb-1 group-hover:text-accent transition-colors duration-300">{item.title}</h3>
+                    <p className="text-2xl text-primary font-bold">{item.date}</p>
+                  </div>
+                  <p className="text-muted-foreground text-lg font-body leading-relaxed">{item.description}</p>
                 </CardContent>
               </Card>
             );

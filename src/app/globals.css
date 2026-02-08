@@ -1,38 +1,37 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 255 100% 98%;
-    --foreground: 265 30% 20%;
+    --background: 350 100% 99%;
+    --foreground: 350 40% 15%;
     --card: 0 0% 100%;
-    --card-foreground: 265 30% 20%;
+    --card-foreground: 350 40% 15%;
     --popover: 0 0% 100%;
-    --popover-foreground: 265 30% 20%;
-    --primary: 265 100% 85%;
-    --primary-foreground: 265 40% 25%;
-    --secondary: 351 46% 95%;
-    --secondary-foreground: 351 46% 40%;
-    --muted: 265 20% 92%;
-    --muted-foreground: 265 15% 45%;
-    --accent: 351 46% 75%;
-    --accent-foreground: 351 20% 20%;
+    --popover-foreground: 350 40% 15%;
+    --primary: 350 100% 70%;
+    --primary-foreground: 350 100% 99%;
+    --secondary: 350 100% 95%;
+    --secondary-foreground: 350 60% 30%;
+    --muted: 350 20% 94%;
+    --muted-foreground: 350 15% 40%;
+    --accent: 330 100% 65%;
+    --accent-foreground: 330 100% 99%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 265 30% 90%;
-    --input: 265 30% 90%;
-    --ring: 265 100% 85%;
-    --radius: 1rem;
-    --sidebar-background: 255 100% 98%;
-    --sidebar-foreground: 265 30% 20%;
-    --sidebar-primary: 265 100% 85%;
-    --sidebar-primary-foreground: 265 40% 25%;
-    --sidebar-accent: 351 46% 95%;
-    --sidebar-accent-foreground: 351 46% 40%;
-    --sidebar-border: 265 30% 90%;
-    --sidebar-ring: 265 100% 85%;
+    --border: 350 30% 92%;
+    --input: 350 30% 92%;
+    --ring: 350 100% 70%;
+    --radius: 1.25rem;
+    --sidebar-background: 350 100% 99%;
+    --sidebar-foreground: 350 40% 15%;
+    --sidebar-primary: 350 100% 70%;
+    --sidebar-primary-foreground: 350 100% 99%;
+    --sidebar-accent: 350 100% 95%;
+    --sidebar-accent-foreground: 350 60% 30%;
+    --sidebar-border: 350 30% 92%;
+    --sidebar-ring: 350 100% 70%;
   }
 }
 
@@ -51,4 +50,14 @@
 
 .font-body {
   font-family: 'PT Sans', sans-serif;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); opacity: 0; }
+  50% { opacity: 0.8; }
+  100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+}
+
+.animate-float {
+  animation: float 15s linear infinite;
 }
