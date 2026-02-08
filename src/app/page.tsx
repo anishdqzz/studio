@@ -1,3 +1,4 @@
+
 import { Navigation } from "@/components/Navigation";
 import { Heart } from "lucide-react";
 
@@ -22,16 +23,16 @@ export default function Home() {
         ))}
       </div>
 
-      <main className="relative z-10 text-center space-y-12 px-4 max-w-full">
-        {/* Simplified Header - Only names as requested */}
-        <h1 className="text-7xl md:text-9xl font-headline text-rose-950 drop-shadow-sm italic tracking-tighter leading-none animate-slide-up [animation-delay:200ms]">
+      <main className="relative z-10 text-center space-y-8 px-4 max-w-full">
+        {/* Names with new distinctive typography */}
+        <h1 className="text-8xl md:text-[10rem] font-names text-rose-950 drop-shadow-md leading-tight animate-slide-up [animation-delay:200ms] py-4">
           Muthu & Anish
         </h1>
         
         <div className="h-px w-32 bg-rose-300 mx-auto animate-scale-in [animation-delay:400ms]" />
         
-        <div className="max-w-4xl mx-auto space-y-8">
-          {/* Personalized Valentine message in a single line */}
+        <div className="max-w-4xl mx-auto space-y-6">
+          {/* Personalized Valentine message */}
           <p className="text-xl md:text-2xl font-headline italic text-rose-700 animate-slide-up [animation-delay:600ms] whitespace-nowrap">
             happy velantines day my dear tiny bharii i love you dii chinjuu
           </p>
