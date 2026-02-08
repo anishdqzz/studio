@@ -1,4 +1,3 @@
-
 import { Navigation } from "@/components/Navigation";
 import { Heart } from "lucide-react";
 import Image from "next/image";
@@ -37,7 +36,7 @@ export default function Home() {
         ))}
       </div>
 
-      <main className="relative z-20 text-center space-y-12 px-4 max-w-full pt-20">
+      <main className="relative z-20 text-center space-y-12 px-4 max-w-full">
         {/* Names with elegant decent font style and letter spacing */}
         <h1 className="text-5xl md:text-8xl font-headline text-rose-950 drop-shadow-md leading-tight animate-slide-up [animation-delay:200ms] py-4 tracking-[0.3em] uppercase">
           MUTHU | ANISH
