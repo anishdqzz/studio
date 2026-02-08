@@ -28,14 +28,17 @@ export default function Home() {
         </div>
         
         <h1 className="text-6xl md:text-9xl font-headline text-foreground drop-shadow-sm italic tracking-tighter leading-none">
-          Muthu & Anish
+          Muthu | Anish
         </h1>
         
         <div className="h-px w-24 bg-accent/30 mx-auto my-4" />
         
         <div className="max-w-2xl mx-auto">
           <p className="text-2xl md:text-3xl font-headline italic text-accent animate-fade-in [animation-delay:400ms]">
-            happy valentine&apos;s day my dear loved one .
+            happy valentine&apos;s day my dear loved one
+          </p>
+          <p className="text-1xl md:text-2Dxl font-headline italic text-accent animate-fade-in [animation-delay:200ms]">
+            CHINJU | SWOTHTHU | MUWTHEY | BHARIYA | VAVOO | DARLING | MINION | AZHAGI | RAKSHASHI | MILMA 
           </p>
         </div>
       </main>
