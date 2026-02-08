@@ -23,10 +23,7 @@ export default function Home() {
       </div>
 
       <main className="relative z-10 text-center space-y-12 px-4 max-w-full">
-        <div className="mb-4 flex justify-center animate-scale-in">
-          <Heart className="w-20 h-20 text-rose-500 animate-pulse" fill="currentColor" />
-        </div>
-        
+        {/* Simplified Header - Only names as requested */}
         <h1 className="text-7xl md:text-9xl font-headline text-rose-950 drop-shadow-sm italic tracking-tighter leading-none animate-slide-up [animation-delay:200ms]">
           Muthu & Anish
         </h1>
@@ -34,10 +31,12 @@ export default function Home() {
         <div className="h-px w-32 bg-rose-300 mx-auto animate-scale-in [animation-delay:400ms]" />
         
         <div className="max-w-4xl mx-auto space-y-8">
+          {/* Updated Valentine message in a single line */}
           <p className="text-xl md:text-2xl font-headline italic text-rose-700 animate-slide-up [animation-delay:600ms] whitespace-nowrap">
-            happy velantines day my dear tiny bharii i love you dii chinjuu
+            happy valentine's day my dear loved one .
           </p>
           
+          {/* Nicknames list in a single line, black color, with letter spacing */}
           <div className="py-4 border-y border-rose-200/50 animate-slide-up [animation-delay:800ms]">
             <p className="text-[10px] md:text-sm font-body font-bold text-black tracking-[0.4em] uppercase whitespace-nowrap overflow-x-auto no-scrollbar px-4">
               CHINJU | SWOTHTHU | MUWTHEY | BHARIYA | VAVOO | DARLING | MINION | AZHAGI | RAKSHASHI | MILMA 

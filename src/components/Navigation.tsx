@@ -48,9 +48,9 @@ export function Navigation() {
         <ChevronUp className="w-6 h-6" />
       </button>
 
-      {/* Horizontal Navigation Bar at the Bottom Center */}
+      {/* Horizontal Navigation Bar positioned 100px from the left */}
       <nav className={cn(
-        "fixed bottom-8 left-1/2 -translate-x-1/2 z-50 px-6 py-3 bg-white/70 backdrop-blur-xl border border-rose-200/50 rounded-full shadow-2xl flex items-center gap-2 sm:gap-6 transition-all duration-500 animate-fade-in"
+        "fixed bottom-8 left-[100px] z-50 px-6 py-3 bg-white/70 backdrop-blur-xl border border-rose-200/50 rounded-full shadow-2xl flex items-center gap-2 sm:gap-6 transition-all duration-500 animate-fade-in"
       )}>
         {navItems.map((item) => {
           const isActive = pathname === item.href;
@@ -73,7 +73,7 @@ export function Navigation() {
               />
               <Icon className={cn("w-5 h-5 z-10 transition-transform duration-300", isActive ? "scale-110" : "group-hover:scale-110")} />
               
-              {/* Tooltip-like label appearing above the icon on hover */}
+              {/* Tooltip-like label */}
               <span className={cn(
                 "absolute bottom-full mb-4 px-3 py-1 bg-rose-600 text-white text-[10px] font-bold rounded-md opacity-0 pointer-events-none transition-all duration-300 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 whitespace-nowrap",
                 isActive && "opacity-0"
