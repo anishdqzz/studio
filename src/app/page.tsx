@@ -33,12 +33,9 @@ export default function Home() {
         
         <div className="h-px w-24 bg-accent/30 mx-auto my-4" />
         
-        <div className="max-w-lg mx-auto">
+        <div className="max-w-2xl mx-auto">
           <p className="text-2xl md:text-3xl font-headline italic text-accent animate-fade-in [animation-delay:400ms]">
-            happy velantines day my dear tiny bharii
-          </p>
-          <p className="text-xl md:text-2xl font-body mt-2 text-muted-foreground animate-fade-in [animation-delay:600ms]">
-            i love you dii chinjuu
+            happy valentine&apos;s day my dear loved one .
           </p>
         </div>
       </main>
