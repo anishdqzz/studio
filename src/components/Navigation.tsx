@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from "next/link";
@@ -49,41 +50,43 @@ export function Navigation() {
       </button>
 
       {/* Horizontal Navigation Bar centered at the bottom */}
-      <nav className={cn(
-        "fixed bottom-8 left-1/1 -translate-x-1/2 z-50 px-6 py-3 bg-white/70 backdrop-blur-xl border border-rose-200/50 rounded-full shadow-2xl flex items-center gap-2 sm:gap-6 transition-all duration-500 animate-fade-in"
-      )}>
-        {navItems.map((item) => {
-          const isActive = pathname === item.href;
-          const Icon = item.icon;
-          return (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={cn(
-                "relative flex flex-col items-center justify-center transition-all duration-500 group h-12 w-12 sm:h-14 sm:w-14",
-                isActive ? "text-white" : "text-rose-400 hover:text-rose-600"
-              )}
-            >
-              {/* Circular Background for Items */}
-              <div 
+      <div className="fixed bottom-8 left-0 right-0 z-50 flex justify-center pointer-events-none">
+        <nav className={cn(
+          "px-6 py-3 bg-white/70 backdrop-blur-xl border border-rose-200/50 rounded-full shadow-2xl flex items-center gap-2 sm:gap-6 transition-all duration-500 animate-fade-in pointer-events-auto"
+        )}>
+          {navItems.map((item) => {
+            const isActive = pathname === item.href;
+            const Icon = item.icon;
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
                 className={cn(
-                  "absolute inset-0 transition-all duration-500 rounded-full",
-                  isActive ? "bg-rose-500 scale-100" : "bg-rose-100/50 scale-0 group-hover:scale-90"
+                  "relative flex flex-col items-center justify-center transition-all duration-500 group h-12 w-12 sm:h-14 sm:w-14",
+                  isActive ? "text-white" : "text-rose-400 hover:text-rose-600"
                 )}
-              />
-              <Icon className={cn("w-5 h-5 z-10 transition-transform duration-300", isActive ? "scale-110" : "group-hover:scale-110")} />
-              
-              {/* Tooltip-like label */}
-              <span className={cn(
-                "absolute bottom-full mb-4 px-3 py-1 bg-rose-600 text-white text-[10px] font-bold rounded-md opacity-0 pointer-events-none transition-all duration-300 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 whitespace-nowrap",
-                isActive && "opacity-0"
-              )}>
-                {item.label}
-              </span>
-            </Link>
-          );
-        })}
-      </nav>
+              >
+                {/* Circular Background for Items */}
+                <div 
+                  className={cn(
+                    "absolute inset-0 transition-all duration-500 rounded-full",
+                    isActive ? "bg-rose-500 scale-100" : "bg-rose-100/50 scale-0 group-hover:scale-90"
+                  )}
+                />
+                <Icon className={cn("w-5 h-5 z-10 transition-transform duration-300", isActive ? "scale-110" : "group-hover:scale-110")} />
+                
+                {/* Tooltip-like label */}
+                <span className={cn(
+                  "absolute bottom-full mb-4 px-3 py-1 bg-rose-600 text-white text-[10px] font-bold rounded-md opacity-0 pointer-events-none transition-all duration-300 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 whitespace-nowrap",
+                  isActive && "opacity-0"
+                )}>
+                  {item.label}
+                </span>
+              </Link>
+            );
+          })}
+        </nav>
+      </div>
     </>
   );
 }

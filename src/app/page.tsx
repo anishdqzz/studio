@@ -23,24 +23,24 @@ export default function Home() {
         ))}
       </div>
 
-      <main className="relative z-10 text-center space-y-8 px-4 max-w-full">
-        {/* Names with new distinctive typography */}
-        <h1 className="text-8xl md:text-[10rem] font-names text-rose-950 drop-shadow-md leading-tight animate-slide-up [animation-delay:200ms] py-4">
-          Muthu & Anish
+      <main className="relative z-10 text-center space-y-12 px-4 max-w-full">
+        {/* Names with decent font style and wide letter spacing */}
+        <h1 className="text-5xl md:text-8xl font-headline text-rose-950 drop-shadow-sm leading-tight animate-slide-up [animation-delay:200ms] py-4 tracking-[0.3em] uppercase">
+          MUTHU & ANISH
         </h1>
         
-        <div className="h-px w-32 bg-rose-300 mx-auto animate-scale-in [animation-delay:400ms]" />
+        <div className="h-px w-48 bg-rose-300/60 mx-auto animate-scale-in [animation-delay:400ms]" />
         
-        <div className="max-w-4xl mx-auto space-y-6">
+        <div className="max-w-4xl mx-auto space-y-8">
           {/* Personalized Valentine message */}
-          <p className="text-xl md:text-2xl font-headline italic text-rose-700 animate-slide-up [animation-delay:600ms] whitespace-nowrap">
-            happy velantines day my dear tiny bharii i love you dii chinjuu
+          <p className="text-xl md:text-2xl font-headline text-rose-700 animate-slide-up [animation-delay:600ms] tracking-wide">
+            HAPPY VALENTINES DAY MY SWEET HEART
           </p>
           
           {/* Nicknames list in a single line, black color, with letter spacing */}
-          <div className="py-4 border-y border-rose-200/50 animate-slide-up [animation-delay:800ms]">
-            <p className="text-[10px] md:text-sm font-body font-bold text-black tracking-[0.4em] uppercase whitespace-nowrap overflow-x-auto no-scrollbar px-4">
-              CHINJU | SWOTHTHU | MUWTHEY | BHARIYA | VAVOO | DARLING | MINION | AZHAGI | RAKSHASHI | MILMA 
+          <div className="py-6 border-y border-rose-200/50 animate-slide-up [animation-delay:800ms]">
+            <p className="text-[10px] md:text-xs font-body font-bold text-black tracking-[0.5em] uppercase whitespace-nowrap overflow-x-auto no-scrollbar px-4">
+              CHINJU | SWOTHTHU | MUWTHEY | BHARIYA | VAVOO | DARLING | MINION | AZHAGI | RAKSHASHI | MILMA | THANGO | CHELLOM 
             </p>
           </div>
         </div>
