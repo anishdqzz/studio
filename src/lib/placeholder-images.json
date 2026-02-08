@@ -53,6 +53,30 @@
       "description": "Forever moments",
       "imageUrl": "",
       "imageHint": "couple eternity"
+    },
+    {
+      "id": "gallery10",
+      "description": "Sweet togetherness",
+      "imageUrl": "",
+      "imageHint": "couple romance"
+    },
+    {
+      "id": "gallery11",
+      "description": "Golden hour smiles",
+      "imageUrl": "",
+      "imageHint": "couple gold"
+    },
+    {
+      "id": "gallery12",
+      "description": "Cherished highlights",
+      "imageUrl": "",
+      "imageHint": "couple memories"
+    },
+    {
+      "id": "gallery13",
+      "description": "Simply us",
+      "imageUrl": "",
+      "imageHint": "couple simple"
     }
   ]
 }
