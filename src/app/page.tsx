@@ -2,25 +2,20 @@
 import { Navigation } from "@/components/Navigation";
 import { Heart } from "lucide-react";
 import Image from "next/image";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
+import bg from './Picsart_26-02-08_16-30-35-686.jpg.jpeg';
 
 export default function Home() {
-  const bgImage = PlaceHolderImages.find(img => img.id === "home-bg");
-
   return (
     <div className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden select-none bg-rose-50">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        {bgImage && (
-          <Image
-            src={bgImage.imageUrl}
-            alt="Background"
-            fill
-            priority
-            className="object-cover"
-            data-ai-hint={bgImage.imageHint}
-          />
-        )}
+        <Image
+          src={bg}
+          alt="Background"
+          fill
+          priority
+          className="object-cover"
+        />
         <div className="absolute inset-0 bg-white/40 backdrop-blur-[2px]" />
       </div>
 
@@ -45,7 +40,7 @@ export default function Home() {
       <main className="relative z-20 text-center space-y-12 px-4 max-w-full">
         {/* Names with elegant decent font style and letter spacing */}
         <h1 className="text-5xl md:text-8xl font-headline text-rose-950 drop-shadow-md leading-tight animate-slide-up [animation-delay:200ms] py-4 tracking-[0.3em] uppercase">
-          MUTHU | ANISH
+          MUTHU & ANISH
         </h1>
         
         <div className="h-px w-48 bg-rose-400/40 mx-auto animate-scale-in [animation-delay:400ms]" />
