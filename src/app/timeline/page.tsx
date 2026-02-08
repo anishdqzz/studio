@@ -7,7 +7,7 @@ const timelineEvents = [
     date: "16/09/24",
     title: "The Day We Met",
     description: "The first time I came to meet you was at the Nenmara stand. That day, you appeared as an angel...",
-    imageUrl: "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=480983602474545"
+    imageUrl: ""
   },
   {
     date: "10/09/2025",
