@@ -40,7 +40,7 @@ export default function GalleryPage() {
                         muted
                         loop
                         autoPlay
-                        preload="metadata"
+                        preload="auto"
                       >
                         <source src={mediaUrl} type="video/mp4" />
                         Your browser does not support the video tag.
