@@ -1,4 +1,3 @@
-
 import { Navigation } from "@/components/Navigation";
 import { Music, Film, MapPin, Coffee, Utensils, Book } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
@@ -31,8 +30,8 @@ export default function FavoritesPage() {
     <div className="min-h-screen pb-32 pt-16 bg-background">
       <div className="max-w-4xl mx-auto px-6">
         <header className="mb-12 text-center animate-fade-in">
-          <h1 className="text-5xl font-headline text-foreground mb-4">Chinju's Favorite Things</h1>
-          <p className="text-lg text-muted-foreground italic">Little pieces of what makes her wonderful to Muthu.</p>
+          <h1 className="text-5xl font-headline text-foreground mb-4">Anish's Favorite Things</h1>
+          <p className="text-lg text-muted-foreground italic">Little pieces of what makes them wonderful to Muthu.</p>
         </header>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -64,7 +63,7 @@ export default function FavoritesPage() {
         <section className="mt-16 p-8 bg-accent/5 rounded-3xl text-center border border-accent/10">
           <h2 className="text-3xl font-headline italic mb-4 text-accent">Personal Note from Muthu</h2>
           <p className="text-muted-foreground font-body leading-relaxed max-w-2xl mx-auto">
-            Chinju, these are just some of the things you love, but my favorite thing of all will always be you.
+            Anish, these are just some of the things you love, but my favorite thing of all will always be you.
           </p>
         </section>
       </div>

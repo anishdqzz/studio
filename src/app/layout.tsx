@@ -1,10 +1,9 @@
-
 import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Muthu & Chinju | Eternal Flame',
-  description: 'A special place for the shared memories and love of Muthu and Chinju.',
+  title: 'Muthu & Anish | Eternal Flame',
+  description: 'A special place for the shared memories and love of Muthu and Anish.',
 };
 
 export default function RootLayout({

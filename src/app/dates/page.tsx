@@ -1,4 +1,3 @@
-
 import { Navigation } from "@/components/Navigation";
 import { Calendar, Cake, Star, Heart } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
@@ -10,14 +9,14 @@ const specialDates = [
     date: "June 12",
     type: "Love",
     icon: Heart,
-    description: "The day Muthu and Chinju officially became a couple."
+    description: "The day Muthu and Anish officially became a couple."
   },
   {
-    title: "Chinju's Birthday",
+    title: "Anish's Birthday",
     date: "November 23",
     type: "Birthday",
     icon: Cake,
-    description: "Celebrating the most amazing woman in the world."
+    description: "Celebrating the most amazing person in the world."
   },
   {
     title: "First Trip Anniversary",
@@ -41,7 +40,7 @@ export default function DatesPage() {
       <div className="max-w-4xl mx-auto px-6">
         <header className="mb-12 text-center animate-fade-in">
           <h1 className="text-5xl font-headline text-foreground mb-4">Our Milestones</h1>
-          <p className="text-lg text-muted-foreground">Every day for Muthu and Chinju is a gift.</p>
+          <p className="text-lg text-muted-foreground">Every day for Muthu and Anish is a gift.</p>
         </header>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
