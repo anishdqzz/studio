@@ -11,7 +11,7 @@
  * @exports GenerateLoveLetterOutput - The output type for the generateLoveLetter function.
  */
 
-import {ai} from '@/ai/genkit';
+import {ai} from '@/lib/ai/genkit';
 import {z} from 'genkit';
 
 // Define the input schema for the love letter generator.

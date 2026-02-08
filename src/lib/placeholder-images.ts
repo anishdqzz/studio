@@ -15,7 +15,7 @@ import image12 from './IMG_20251112_130039 (2).png';
 import image13 from './IMG_20240903_164945_031.webp';
 
 // Note: Videos MUST be placed in the /public folder at the root of the project.
-// Access them using a leading slash (e.g., /video.mp4)
+// In the browser, they are accessed via the root path (e.g., /myvideo.mp4)
 const video1Path = '/InShot_20260116_204119246.mp4';
 const video2Path = '/VID-20260105-WA0005.mp4';
 

@@ -8,7 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/components/ui/card";
-import { generateLoveLetter } from "@/ai/flows/generate-love-letter";
+import { generateLoveLetter } from "@/lib/ai/flows/generate-love-letter";
 import { Mail, Sparkles, Loader2, Heart } from "lucide-react";
 
 export default function LoveLetterPage() {

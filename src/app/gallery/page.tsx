@@ -31,7 +31,7 @@ export default function GalleryPage() {
               >
                 <CardContent className="p-0 relative group">
                   {item.type === 'video' ? (
-                    <div className="relative aspect-video bg-black flex items-center justify-center">
+                    <div className="relative aspect-video bg-black flex items-center justify-center overflow-hidden rounded-lg">
                       <video 
                         key={mediaUrl}
                         className="w-full h-full object-cover"
@@ -39,7 +39,8 @@ export default function GalleryPage() {
                         playsInline
                         muted
                         loop
-                        preload="auto"
+                        autoPlay
+                        preload="metadata"
                       >
                         <source src={mediaUrl} type="video/mp4" />
                         Your browser does not support the video tag.
