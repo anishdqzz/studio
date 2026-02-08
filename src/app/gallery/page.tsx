@@ -34,6 +34,7 @@ export default function GalleryPage() {
                     <div className="relative aspect-video bg-black flex items-center justify-center overflow-hidden rounded-lg">
                       <video 
                         key={mediaUrl}
+                        src={mediaUrl}
                         className="w-full h-full object-cover"
                         controls
                         playsInline
@@ -42,7 +43,6 @@ export default function GalleryPage() {
                         autoPlay
                         preload="auto"
                       >
-                        <source src={mediaUrl} type="video/mp4" />
                         Your browser does not support the video tag.
                       </video>
                     </div>
