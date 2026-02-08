@@ -13,17 +13,18 @@ import image10 from './Picsart_26-01-06_08-15-42-977.jpg.jpeg';
 import image11 from './IMG-20260127-WA0010.jpg.jpeg';
 import image12 from './IMG_20251112_130039 (2).png';
 import image13 from './IMG_20240903_164945_031.webp';
-// import Localvideosrc from './InShot_20260116_204119246.mp4';
-// import Localvideosrc from './src/lib/VID-20260105-WA0005.mp4';
+import video1 from './InShot_20260116_204119246.mp4';
+import video2 from './VID-20260105-WA0005.mp4';
 
 export type ImagePlaceholder = {
   id: string;
   description: string;
   imageUrl: any;
   imageHint: string;
+  type: 'image' | 'video';
 };
 
-const imageMap: Record<string, any> = {
+const mediaMap: Record<string, any> = {
   gallery1: image1,
   gallery2: image2,
   gallery3: image3,
@@ -36,10 +37,13 @@ const imageMap: Record<string, any> = {
   gallery10: image10,
   gallery11: image11,
   gallery12: image12,
-  gallery13: image13
+  gallery13: image13,
+  video1: video1,
+  video2: video2,
 };
 
 export const PlaceHolderImages: ImagePlaceholder[] = data.placeholderImages.map(img => ({
   ...img,
-  imageUrl: imageMap[img.id] || img.imageUrl,
+  type: (img.type || 'image') as 'image' | 'video',
+  imageUrl: mediaMap[img.id] || img.imageUrl,
 }));

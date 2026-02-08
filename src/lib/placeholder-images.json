@@ -4,79 +4,106 @@
       "id": "gallery1",
       "description": "A beautiful moment captured",
       "imageUrl": "",
-      "imageHint": "romantic couple"
+      "imageHint": "romantic couple",
+      "type": "image"
     },
     {
       "id": "gallery2",
       "description": "Our special day",
       "imageUrl": "",
-      "imageHint": "couple smile"
+      "imageHint": "couple smile",
+      "type": "image"
     },
     {
       "id": "gallery3",
       "description": "Walking together",
       "imageUrl": "",
-      "imageHint": "couple walking"
+      "imageHint": "couple walking",
+      "type": "image"
     },
     {
       "id": "gallery4",
       "description": "Laughter and joy",
       "imageUrl": "",
-      "imageHint": "happy couple"
+      "imageHint": "happy couple",
+      "type": "image"
     },
     {
       "id": "gallery5",
       "description": "Shared memories",
       "imageUrl": "",
-      "imageHint": "couple holding"
+      "imageHint": "couple holding",
+      "type": "image"
     },
     {
       "id": "gallery6",
       "description": "Elegance and love",
       "imageUrl": "",
-      "imageHint": "elegant couple"
+      "imageHint": "elegant couple",
+      "type": "image"
     },
     {
       "id": "gallery7",
       "description": "A precious gift",
       "imageUrl": "",
-      "imageHint": "couple gift"
+      "imageHint": "couple gift",
+      "type": "image"
     },
     {
       "id": "gallery8",
       "description": "Sunset whispers",
       "imageUrl": "",
-      "imageHint": "couple sunset"
+      "imageHint": "couple sunset",
+      "type": "image"
     },
     {
       "id": "gallery9",
       "description": "Forever moments",
       "imageUrl": "",
-      "imageHint": "couple eternity"
+      "imageHint": "couple eternity",
+      "type": "image"
     },
     {
       "id": "gallery10",
       "description": "Sweet togetherness",
       "imageUrl": "",
-      "imageHint": "couple romance"
+      "imageHint": "couple romance",
+      "type": "image"
     },
     {
       "id": "gallery11",
       "description": "Golden hour smiles",
       "imageUrl": "",
-      "imageHint": "couple gold"
+      "imageHint": "couple gold",
+      "type": "image"
     },
     {
       "id": "gallery12",
       "description": "Cherished highlights",
       "imageUrl": "",
-      "imageHint": "couple memories"
+      "imageHint": "couple memories",
+      "type": "image"
     },
     {
       "id": "gallery13",
       "description": "Simply us",
       "imageUrl": "",
-      "imageHint": "couple simple"
+      "imageHint": "couple simple",
+      "type": "image"
+    },
+    {
+      "id": "video1",
+      "description": "A special video memory",
+      "imageUrl": "",
+      "imageHint": "couple video",
+      "type": "video"
+    },
+    {
+      "id": "video2",
+      "description": "Moments in motion",
+      "imageUrl": "",
+      "imageHint": "happy moments",
+      "type": "video"
     }
   ]
 }
