@@ -11,15 +11,51 @@ const timelineEvents = [
   },
   {
     date: "10/09/2025",
-    title: "2nd Meet at Palakkad Fort",
-    description: "Cold weather, warm hearts. We spent the half day laughing and exchanging small but meaningful gifts.",
+    title: "2nd Meet at kunissery kummatti",
+    description: "Cold weather, warm hearts. i saw you with my mama and your chechi, you wear white t-shirt and blue baggy pant HaHaHaHa kannil oru Kannadayum Indayirinnu pookiee Eeee .",
     imageId: "gallery1"
   },
   {
     date: "12/11/2025",
-    title: "3rd Meet at Palakkad Fort",
-    description: "A beautiful day and your birthday. We took a lot of photos, and it was the first time I gave you a little kiss on your cheek.",
-    imageId: "gallery2"
+    title: "3rd Meet at 1st Palakkad Fort meet",
+    description: "A beautiful day. We share more coversation, and i nervesed to talk with you .",
+    imageId: "gallery8"
+  },
+  {
+    date: "12/11/2025",
+    title: "4th Meet at Palakkad Fort meet",
+    description: "This day is an unforgettable day in my life, your birthday. We took a lot of photos of us. I gave you my first kiss.",
+    imageId: "gallery8"
+  },
+  {
+    date: "23/11/2025",
+    title: "5th Meet at Palakkad Fort Park",
+    description: "You came wearing a red dress. You were still sleepy-eyed. The chapati you made was delicious.",
+    imageId: "gallery8"
+  },
+  {
+    date: "03/12/2025",
+    title: "6th Meet at Palakkad Fort meet",
+    description: "This day you came in a white dress with black dots. You slapped me on the cheek with your flower-like hands.",
+    imageId: "gallery8"
+  },
+  {
+    date: "02/01/2026",
+    title: "7th Meet at Palakkad Fort meet",
+    description: "We went to the Yakara temple in Palakkad because I wanted to go to the temple on the first day of the year and I wanted to go with you. You were so beautiful, first time we together travelled on auto riksha.",
+    imageId: "gallery8"
+  },
+  {
+    date: "16/01/2026",
+    title: "8th Meet at Palakkad Fort meet",
+    description: "On this day you came wearing a white T-shirt, blue baggy pant with specs. We took a lot of photos. I hugged you. The radish sambar you made is delicious.",
+    imageId: "gallery8"
+  },
+  {
+    date: "06/02/2026",
+    title: "9th Meet at Palakkad Fort meet",
+    description: "Every minute you were with me was a moment I forgot about myself. We went to eat mandhi for the first time.",
+    imageId: "gallery8"
   }
 ];
 
