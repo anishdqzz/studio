@@ -1,5 +1,5 @@
 import { Navigation } from "@/components/Navigation";
-import { Calendar, Cake, Star, Heart, Music, Sparkles, Gift } from "lucide-react";
+import { Calendar, Cake, Star, Heart, Music, Sparkles, Gift, Diamond } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
@@ -11,6 +11,14 @@ const specialDates = [
     icon: Heart,
     color: "bg-red-100 text-red-600",
     description: "We officially started their journey together. The beginning of forever."
+  },
+  {
+    title: "Our First Meet",
+    date: "Sep 16",
+    type: "The Big Day",
+    icon: Diamond,
+    color: "bg-red-100 text-red-600",
+    description: "We First Time Meet together at Nenmare Stand You Give a wonderfull Ring for Me."
   },
   {
     title: "Chinju's Birthday",
