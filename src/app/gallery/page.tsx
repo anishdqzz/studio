@@ -34,11 +34,15 @@ export default function GalleryPage() {
                   {item.type === 'video' ? (
                     <div className="relative aspect-video bg-black flex items-center justify-center">
                       <video 
-                        src={mediaUrl} 
+                        key={mediaUrl}
                         className="w-full h-full object-cover"
                         controls
                         playsInline
-                      />
+                        preload="metadata"
+                      >
+                        <source src={mediaUrl} type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
                     </div>
                   ) : (
                     item.imageUrl ? (
