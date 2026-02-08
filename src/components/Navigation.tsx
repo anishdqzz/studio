@@ -3,16 +3,14 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Heart, Image, History, Mail, Calendar, Sparkles } from "lucide-react";
+import { Heart, Image, History, Calendar } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navItems = [
   { href: "/", label: "Home", icon: Heart },
   { href: "/gallery", label: "Gallery", icon: Image },
   { href: "/timeline", label: "Our Story", icon: History },
-  { href: "/love-letter", label: "Love Letters", icon: Mail },
   { href: "/dates", label: "Special Dates", icon: Calendar },
-  { href: "/favorites", label: "Favorites", icon: Sparkles },
 ];
 
 export function Navigation() {
