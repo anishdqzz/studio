@@ -10,10 +10,10 @@ const specialDates = [
     date: "June 12",
     type: "Love",
     icon: Heart,
-    description: "The day we officially became a couple."
+    description: "The day Muthu and Chinju officially became a couple."
   },
   {
-    title: "Her Birthday",
+    title: "Chinju's Birthday",
     date: "November 23",
     type: "Birthday",
     icon: Cake,
@@ -31,7 +31,7 @@ const specialDates = [
     date: "Pending...",
     type: "Future",
     icon: Calendar,
-    description: "A beautiful day still to come."
+    description: "A beautiful day still to come for us."
   }
 ];
 
@@ -40,8 +40,8 @@ export default function DatesPage() {
     <div className="min-h-screen pb-32 pt-16 bg-background">
       <div className="max-w-4xl mx-auto px-6">
         <header className="mb-12 text-center animate-fade-in">
-          <h1 className="text-5xl font-headline text-foreground mb-4">Special Milestones</h1>
-          <p className="text-lg text-muted-foreground">Every day is a gift, but these are extra special.</p>
+          <h1 className="text-5xl font-headline text-foreground mb-4">Our Milestones</h1>
+          <p className="text-lg text-muted-foreground">Every day for Muthu and Chinju is a gift.</p>
         </header>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

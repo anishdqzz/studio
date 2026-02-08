@@ -3,8 +3,8 @@ import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Eternal Flame | Our Journey',
-  description: 'A special place for our shared memories and love.',
+  title: 'Muthu & Chinju | Eternal Flame',
+  description: 'A special place for the shared memories and love of Muthu and Chinju.',
 };
 
 export default function RootLayout({
