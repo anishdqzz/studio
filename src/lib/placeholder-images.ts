@@ -14,11 +14,6 @@ import image11 from './IMG-20260127-WA0010.jpg.jpeg';
 import image12 from './IMG_20251112_130039 (2).png';
 import image13 from './IMG_20240903_164945_031.webp';
 
-// Note: Videos MUST be placed in the /public folder at the root of the project.
-// In the browser, they are accessed via the root path (e.g., /video1.mp4)
-const video1Path = '/video1.mp4';
-const video2Path = '/video2.mp4';
-
 export type ImagePlaceholder = {
   id: string;
   description: string;
@@ -41,8 +36,6 @@ const mediaMap: Record<string, any> = {
   gallery11: image11,
   gallery12: image12,
   gallery13: image13,
-  video1: video1Path,
-  video2: video2Path,
 };
 
 export const PlaceHolderImages: ImagePlaceholder[] = data.placeholderImages.map(img => ({

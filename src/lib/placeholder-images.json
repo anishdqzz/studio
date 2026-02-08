@@ -90,20 +90,6 @@
       "imageUrl": "",
       "imageHint": "couple simple",
       "type": "image"
-    },
-    {
-      "id": "video1",
-      "description": "A special video memory",
-      "imageUrl": "",
-      "imageHint": "couple video",
-      "type": "video"
-    },
-    {
-      "id": "video2",
-      "description": "Moments in motion",
-      "imageUrl": "",
-      "imageHint": "happy moments",
-      "type": "video"
     }
   ]
 }
