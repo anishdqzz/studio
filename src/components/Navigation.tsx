@@ -1,9 +1,8 @@
-
 "use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Heart, Image, History, Calendar, ChevronUp } from "lucide-react";
+import { Heart, Image, History, Calendar, ChevronUp, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
 
@@ -11,6 +10,7 @@ const navItems = [
   { href: "/", label: "Home", icon: Heart },
   { href: "/gallery", label: "Gallery", icon: Image },
   { href: "/timeline", label: "Our Story", icon: History },
+  { href: "/life", label: "Life", icon: Sparkles },
   { href: "/dates", label: "Special Dates", icon: Calendar },
 ];
 
@@ -52,7 +52,7 @@ export function Navigation() {
       {/* Horizontal Navigation Bar centered at the bottom */}
       <div className="fixed bottom-8 left-0 right-0 z-50 flex justify-center pointer-events-none">
         <nav className={cn(
-          "px-6 py-3 bg-white/70 backdrop-blur-xl border border-rose-200/50 rounded-full shadow-2xl flex items-center gap-2 sm:gap-6 transition-all duration-500 animate-fade-in pointer-events-auto"
+          "px-4 py-3 bg-white/70 backdrop-blur-xl border border-rose-200/50 rounded-full shadow-2xl flex items-center gap-1 sm:gap-4 transition-all duration-500 animate-fade-in pointer-events-auto"
         )}>
           {navItems.map((item) => {
             const isActive = pathname === item.href;
