@@ -2,60 +2,69 @@ import Image from "next/image";
 import { Navigation } from "@/components/Navigation";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
+// Local photo imports
+import photo1 from "./birthday.jpeg";
+import photo2 from "./kummattii.jpeg";
+import photo3 from "./brown shirt.jpeg";
+import photo4 from "./first meet.jpeg";
+import photo5 from "./meroon tshirt.jpeg";
+import photo6 from "./white tshirt.jpeg";
+import photo7 from "./park.jpeg";
+
 const timelineEvents = [
   {
     date: "16/09/24",
     title: "The Day We Met",
     description: "The first time I came to meet you was at the Nenmara stand. That day, you appeared as an angel...",
-    imageUrl: ""
+    image: "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=480983602474545"
   },
   {
     date: "10/09/2025",
     title: "2nd Meet at kunissery kummatti",
     description: "Cold weather, warm hearts. i saw you with my mama and your chechi, you wear white t-shirt and blue baggy pant HaHaHaHa kannil oru Kannadayum Indayirinnu pookiee Eeee .",
-    imageId: "gallery1"
+    image: photo2
   },
   {
     date: "12/11/2025",
     title: "3rd Meet at 1st Palakkad Fort meet",
-    description: "A beautiful day. We share more coversation, and i nervesed to talk with you .",
-    imageId: "gallery8"
+    description: "A beautiful day. We share more conversation, and i nervoused to talk with you .",
+    image: photo4
   },
   {
     date: "12/11/2025",
     title: "4th Meet at Palakkad Fort meet",
     description: "This day is an unforgettable day in my life, your birthday. We took a lot of photos of us. I gave you my first kiss.",
-    imageId: "gallery8"
+    image: photo1
   },
   {
     date: "23/11/2025",
     title: "5th Meet at Palakkad Fort Park",
     description: "You came wearing a red dress. You were still sleepy-eyed. The chapati you made was delicious.",
-    imageId: "gallery8"
+    image: photo7
   },
   {
     date: "03/12/2025",
     title: "6th Meet at Palakkad Fort meet",
     description: "This day you came in a white dress with black dots. You slapped me on the cheek with your flower-like hands.",
-    imageId: "gallery8"
+    image: photo5
   },
   {
     date: "02/01/2026",
     title: "7th Meet at Palakkad Fort meet",
     description: "We went to the Yakara temple in Palakkad because I wanted to go to the temple on the first day of the year and I wanted to go with you. You were so beautiful, first time we together travelled on auto riksha.",
-    imageId: "gallery8"
+    image: photo3
   },
   {
     date: "16/01/2026",
     title: "8th Meet at Palakkad Fort meet",
     description: "On this day you came wearing a white T-shirt, blue baggy pant with specs. We took a lot of photos. I hugged you. The radish sambar you made is delicious.",
-    imageId: "gallery8"
+    image: photo6
   },
   {
     date: "06/02/2026",
     title: "9th Meet at Palakkad Fort meet",
     description: "Every minute you were with me was a moment I forgot about myself. We went to eat mandhi for the first time.",
-    imageId: "gallery8"
+    image: "https://images.unsplash.com/photo-1573728303123-6d984b991947?q=80&w=1080"
   }
 ];
 
@@ -76,9 +85,8 @@ export default function TimelinePage() {
           
           <div className="space-y-16 md:space-y-32">
             {timelineEvents.map((event, index) => {
-              const galleryImg = event.imageId ? PlaceHolderImages.find(img => img.id === event.imageId) : null;
-              const displayImage = event.imageUrl || (galleryImg?.imageUrl);
               const isEven = index % 2 === 0;
+              const displayImage = event.image;
 
               return (
                 <div key={index} className={`flex flex-col md:flex-row items-center gap-12 ${isEven ? 'md:flex-row-reverse' : ''}`}>
