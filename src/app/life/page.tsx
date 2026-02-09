@@ -22,29 +22,29 @@ export default function LifePage() {
               
               <div className="space-y-12">
                 <div>
-                  <h2 className="text-3xl font-headline text-rose-500 font-bold mb-4">Ente Onnayulla Jeevithathinu</h2>
-                  <p className="text-xl md:text-2xl font-headline leading-relaxed text-foreground italic">
+                  <h2 className="text-3xl font-headline text-pink-500 font-bold mb-4">Ente Onnayulla Jeevithathinu</h2>
+                  <p className="text-lg md:text-xl font-body leading-relaxed text-foreground text-left md:text-center">
                     Nammal onnichu thudangaan pokunna aa puthiya jeevithathil, ninne njan ponnu pole nokkum. Ente lokathile ettavum valiya nidhi neeyaanu. Oru pacha kunjine engane snehathode pothinju pidikkumo, athe pole njan ninne karuthalode ente cherthu pidikkum. Ninakkoru sankadam varaan njan sammathikkilla, ninte oru thulli kannuneer polum pozhiyatha reethiyil njan ninne kaatholum.
                   </p>
                 </div>
 
                 <div>
-                  <h2 className="text-3xl font-headline text-rose-500 font-bold mb-4">Ninte Swapnangalkku Kootayi</h2>
-                  <p className="text-xl md:text-2xl font-headline leading-relaxed text-foreground italic">
+                  <h2 className="text-3xl font-headline text-pink-500 font-bold mb-4">Ninte Swapnangalkku Kootayi</h2>
+                  <p className="text-lg md:text-xl font-body leading-relaxed text-foreground text-left md:text-center">
                     Nee kaanunna oro swapnavum, ninte manasilulla oro agrahangalum nijaarthathilekk ethikkaan njan ninte koodeyundaakum. Nee thalarumpol njan ninte thunaiyaayi nilkkum. Ninte oro vijayathilum namukkonnichu chirikkaam. Ninte swapnangal ellam ninte koode ninnu achieve cheyyikkaan ente ee kaikal eppozhum ninte koodeyundaakum.
                   </p>
                 </div>
 
                 <div>
-                  <h2 className="text-3xl font-headline text-rose-500 font-bold mb-4">Jeevithakaalam Muzhuvan</h2>
-                  <p className="text-xl md:text-2xl font-headline leading-relaxed text-foreground italic">
+                  <h2 className="text-3xl font-headline text-pink-500 font-bold mb-4">Jeevithakaalam Muzhuvan</h2>
+                  <p className="text-lg md:text-xl font-body leading-relaxed text-foreground text-left md:text-center">
                     Nee ente mathramaanu. Lokathile ella premavum njan ninakku mathramayi tharum. Namukkonnichu jeevikkam, maranam vare. Oro divasavum njan ninne puthiya reethiyil premikkum. Nammude aa puthiya jeevithathile oro raathriyum ninte mudiizhakalil thalodi ninne urakki, ninte aa punchiri kandu thanne njan oro prabhathavum unarum. Jeevithathinte avasana shwasam vare, ente kayyile ninte viralukal korthu vechu namukku ee lokathil onnichu jeevikkam.
                   </p>
                 </div>
               </div>
 
               <div className="mt-16 p-8 bg-rose-50/50 rounded-2xl border border-rose-100">
-                <p className="text-2xl md:text-3xl font-headline italic leading-relaxed text-foreground text-rose-700">
+                <p className="text-2xl md:text-3xl font-headline italic leading-relaxed text-rose-700">
                   "Whatever you've wished for, we will reach for it together. I won't just be a witness to your success—I will be the hand you hold as you make every one of those dreams a reality."
                 </p>
               </div>
@@ -84,7 +84,7 @@ export default function LifePage() {
           </Card>
         </div>
 
-        <footer className="text-center animate-fade-in [animation-delay:800ms]">
+        <footer className="text-center animate-fade-in [animation-delay:800ms] pb-10">
           <p className="font-names text-5xl text-rose-500">Anish | Chinju</p>
           <p className="text-muted-foreground mt-2 uppercase tracking-[0.3em] text-xs">Forever & Always</p>
         </footer>
