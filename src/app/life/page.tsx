@@ -19,14 +19,21 @@ export default function LifePage() {
           <Card className="border-none shadow-2xl bg-white/80 backdrop-blur-md overflow-hidden rounded-[3rem]">
             <CardContent className="p-12 md:p-16 text-center">
               <Heart className="w-12 h-12 text-rose-500 mx-auto mb-8 animate-pulse" fill="currentColor" />
-              <p className="text-2xl md:text-3xl font-headline italic leading-relaxed text-foreground">
-                "The moment I click the 'Life' button and step into a new page with you, my world will change forever. 
-                In that new chapter, I promise to look after you with the tenderness and innocence one shows a little baby. 
-                I will be your safe haven, your comfort, and your constant protector."
+              <p className="text-2xl md:text-3xl font-headline  leading-relaxed text-foreground">
+                <b>Ente Onnayulla Jeevithathinu</b>
+                <br></br>
+                Nammal onnichu thudangaan pokunna aa puthiya jeevithathil, ninne njan ponnu pole nokkum. Ente lokathile ettavum valiya nidhi neeyaanu. Oru pacha kunjine engane snehathode pothinju pidikkumo, athe pole njan ninne karuthalode ente cherthu pidikkum. Ninakkoru sankadam varaan njan sammathikkilla, ninte oru thulli kannuneer polum pozhiyatha reethiyil njan ninne kaatholum.
+                <br></br>
+                <b>Ninte Swapnangalkku Kootayi</b>
+                <br></br>
+                Nee kaanunna oro swapnavum, ninte manasilulla oro agrahangalum nijaarthathilekk ethikkaan njan ninte koodeyundaakum. Nee thalarumpol njan ninte thunaiyaayi nilkkum. Ninte oro vijayathilum namukkonnichu chirikkaam. Ninte swapnangal ellam ninte koode ninnu achieve cheyyikkaan ente ee kaikal eppozhum ninte koodeyundaakum.
               </p>
+              <br></br>
               <p className="mt-8 text-2xl md:text-3xl font-headline italic leading-relaxed text-foreground">
-                "But my love isn't just about keeping you safe; it’s about helping you fly. 
-                I will stand right beside you through every struggle and every triumph, dedicated to helping you achieve all your dreams."
+                <b>Jeevithakaalam Muzhuvan</b>
+                <br></br>
+                Nee ente mathramaanu. Lokathile ella premavum njan ninakku mathramayi tharum. Namukkonnichu jeevikkam, maranam vare. Oro divasavum njan ninne puthiya reethiyil premikkum. Nammude aa puthiya jeevithathile oro raathriyum ninte mudiizhakalil thalodi ninne urakki, ninte aa punchiri kandu thanne njan oro prabhathavum unarum.
+                Jeevithathinte avasana shwasam vare, ente kayyile ninte viralukal korthu vechu namukku ee lokathil onnichu jeevikkam. Ninne snehikkaanum, karuthalode nokkaanum njan eppozhum ninte nizhalaayi koodeyundaakum.
               </p>
               <p className="mt-8 text-2xl md:text-3xl font-headline italic leading-relaxed text-foreground">
                 "Whatever you've wished for, we will reach for it together. I won't just be a witness to your success—I will be the hand you hold as you make every one of those dreams a reality."
