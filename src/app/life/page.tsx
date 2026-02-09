@@ -5,13 +5,13 @@ import { Sparkles, Heart, ShieldCheck, Star } from "lucide-react";
 
 export default function LifePage() {
   return (
-    <div className="min-h-screen pb-40 pt-24 bg-gradient-to-b from-rose-50 to-white">
-      <div className="max-w-4xl mx-auto px-6">
-        <header className="mb-16 text-center animate-fade-in">
+    <div className="min-h-screen pb-40 pt-24 bg-gradient-to-b from-rose-50 to-white font-body">
+      <div className="max-w-4xl mx-auto px-6 text-center">
+        <header className="mb-16 animate-fade-in">
           <Badge variant="outline" className="mb-4 px-4 py-1 border-primary text-primary font-bold tracking-widest uppercase">
             Life Chapter
           </Badge>
-          <h1 className="text-6xl font-headline text-foreground mb-6 italic">Futur Goals</h1>
+          <h1 className="text-6xl font-headline text-foreground mb-6 italic">A Living Promise</h1>
           <div className="h-px w-24 bg-rose-300 mx-auto" />
         </header>
 
@@ -19,25 +19,35 @@ export default function LifePage() {
           <Card className="border-none shadow-2xl bg-white/80 backdrop-blur-md overflow-hidden rounded-[3rem]">
             <CardContent className="p-12 md:p-16 text-center">
               <Heart className="w-12 h-12 text-rose-500 mx-auto mb-8 animate-pulse" fill="currentColor" />
-              <p className="text-2xl md:text-3xl font-headline  leading-relaxed text-foreground">
-                <b>Ente Onnayulla Jeevithathinu</b>
-                <br></br>
-                Nammal onnichu thudangaan pokunna aa puthiya jeevithathil, ninne njan ponnu pole nokkum. Ente lokathile ettavum valiya nidhi neeyaanu. Oru pacha kunjine engane snehathode pothinju pidikkumo, athe pole njan ninne karuthalode ente cherthu pidikkum. Ninakkoru sankadam varaan njan sammathikkilla, ninte oru thulli kannuneer polum pozhiyatha reethiyil njan ninne kaatholum.
-                <br></br>
-                <b>Ninte Swapnangalkku Kootayi</b>
-                <br></br>
-                Nee kaanunna oro swapnavum, ninte manasilulla oro agrahangalum nijaarthathilekk ethikkaan njan ninte koodeyundaakum. Nee thalarumpol njan ninte thunaiyaayi nilkkum. Ninte oro vijayathilum namukkonnichu chirikkaam. Ninte swapnangal ellam ninte koode ninnu achieve cheyyikkaan ente ee kaikal eppozhum ninte koodeyundaakum.
-              </p>
-              <br></br>
-              <p className="mt-8 text-2xl md:text-3xl font-headline italic leading-relaxed text-foreground">
-                <b>Jeevithakaalam Muzhuvan</b>
-                <br></br>
-                Nee ente mathramaanu. Lokathile ella premavum njan ninakku mathramayi tharum. Namukkonnichu jeevikkam, maranam vare. Oro divasavum njan ninne puthiya reethiyil premikkum. Nammude aa puthiya jeevithathile oro raathriyum ninte mudiizhakalil thalodi ninne urakki, ninte aa punchiri kandu thanne njan oro prabhathavum unarum.
-                Jeevithathinte avasana shwasam vare, ente kayyile ninte viralukal korthu vechu namukku ee lokathil onnichu jeevikkam. Ninne snehikkaanum, karuthalode nokkaanum njan eppozhum ninte nizhalaayi koodeyundaakum.
-              </p>
-              <p className="mt-8 text-2xl md:text-3xl font-headline italic leading-relaxed text-foreground">
-                "Whatever you've wished for, we will reach for it together. I won't just be a witness to your success—I will be the hand you hold as you make every one of those dreams a reality."
-              </p>
+              
+              <div className="space-y-12">
+                <div>
+                  <h2 className="text-3xl font-headline text-rose-500 font-bold mb-4">Ente Onnayulla Jeevithathinu</h2>
+                  <p className="text-xl md:text-2xl font-headline leading-relaxed text-foreground italic">
+                    Nammal onnichu thudangaan pokunna aa puthiya jeevithathil, ninne njan ponnu pole nokkum. Ente lokathile ettavum valiya nidhi neeyaanu. Oru pacha kunjine engane snehathode pothinju pidikkumo, athe pole njan ninne karuthalode ente cherthu pidikkum. Ninakkoru sankadam varaan njan sammathikkilla, ninte oru thulli kannuneer polum pozhiyatha reethiyil njan ninne kaatholum.
+                  </p>
+                </div>
+
+                <div>
+                  <h2 className="text-3xl font-headline text-rose-500 font-bold mb-4">Ninte Swapnangalkku Kootayi</h2>
+                  <p className="text-xl md:text-2xl font-headline leading-relaxed text-foreground italic">
+                    Nee kaanunna oro swapnavum, ninte manasilulla oro agrahangalum nijaarthathilekk ethikkaan njan ninte koodeyundaakum. Nee thalarumpol njan ninte thunaiyaayi nilkkum. Ninte oro vijayathilum namukkonnichu chirikkaam. Ninte swapnangal ellam ninte koode ninnu achieve cheyyikkaan ente ee kaikal eppozhum ninte koodeyundaakum.
+                  </p>
+                </div>
+
+                <div>
+                  <h2 className="text-3xl font-headline text-rose-500 font-bold mb-4">Jeevithakaalam Muzhuvan</h2>
+                  <p className="text-xl md:text-2xl font-headline leading-relaxed text-foreground italic">
+                    Nee ente mathramaanu. Lokathile ella premavum njan ninakku mathramayi tharum. Namukkonnichu jeevikkam, maranam vare. Oro divasavum njan ninne puthiya reethiyil premikkum. Nammude aa puthiya jeevithathile oro raathriyum ninte mudiizhakalil thalodi ninne urakki, ninte aa punchiri kandu thanne njan oro prabhathavum unarum. Jeevithathinte avasana shwasam vare, ente kayyile ninte viralukal korthu vechu namukku ee lokathil onnichu jeevikkam.
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-16 p-8 bg-rose-50/50 rounded-2xl border border-rose-100">
+                <p className="text-2xl md:text-3xl font-headline italic leading-relaxed text-foreground text-rose-700">
+                  "Whatever you've wished for, we will reach for it together. I won't just be a witness to your success—I will be the hand you hold as you make every one of those dreams a reality."
+                </p>
+              </div>
             </CardContent>
           </Card>
         </section>
@@ -48,7 +58,7 @@ export default function LifePage() {
               <div className="w-16 h-16 bg-blue-50 text-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
                 <ShieldCheck className="w-8 h-8" />
               </div>
-              <h3 className="font-headline italic text-xl mb-2">Safe Haven</h3>
+              <h3 className="font-headline italic text-xl mb-2 text-rose-600">Safe Haven</h3>
               <p className="text-muted-foreground text-sm font-body">Thande Koode Irikkumbo Njn Sworgathil Ulla Pole Indavudo Koche.</p>
             </CardContent>
           </Card>
@@ -58,7 +68,7 @@ export default function LifePage() {
               <div className="w-16 h-16 bg-amber-50 text-amber-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
                 <Sparkles className="w-8 h-8" />
               </div>
-              <h3 className="font-headline italic text-xl mb-2">I Support You Fly</h3>
+              <h3 className="font-headline italic text-xl mb-2 text-rose-600">I Support You Fly</h3>
               <p className="text-muted-foreground text-sm font-body">Nee Ninde Dream And Achivement Complete Aakkan Njn Ennum Support Cheiyum Vavoo.</p>
             </CardContent>
           </Card>
@@ -68,14 +78,14 @@ export default function LifePage() {
               <div className="w-16 h-16 bg-purple-50 text-purple-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
                 <Star className="w-8 h-8" />
               </div>
-              <h3 className="font-headline italic text-xl mb-2">Our Dreams</h3>
+              <h3 className="font-headline italic text-xl mb-2 text-rose-600">Our Dreams</h3>
               <p className="text-muted-foreground text-sm font-body">Oru Kunj Family Athil Njn Nammande Makkal Thats Enough For Me.</p>
             </CardContent>
           </Card>
         </div>
 
         <footer className="text-center animate-fade-in [animation-delay:800ms]">
-          <p className="font-names text-4xl text-rose-500">Anish | Chinju</p>
+          <p className="font-names text-5xl text-rose-500">Anish | Chinju</p>
           <p className="text-muted-foreground mt-2 uppercase tracking-[0.3em] text-xs">Forever & Always</p>
         </footer>
       </div>
