@@ -9,8 +9,36 @@ import bg from './Picsart_26-02-08_16-30-35-686.jpg.jpeg';
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
+interface HeartData {
+  left: string;
+  top: string;
+  size: string;
+  delay: string;
+  duration: string;
+}
+
 export default function Home() {
   const [stage, setStage] = useState<'intro' | 'message' | 'main'>('intro');
+  const [introHearts, setIntroHearts] = useState<HeartData[]>([]);
+  const [messageHearts, setMessageHearts] = useState<HeartData[]>([]);
+  const [mainHearts, setMainHearts] = useState<HeartData[]>([]);
+
+  useEffect(() => {
+    // Generate random properties for hearts after mounting to avoid hydration mismatch
+    const generateHearts = (count: number, isIntro: boolean) => {
+      return [...Array(count)].map(() => ({
+        left: `${Math.random() * 100}%`,
+        top: `${100 + Math.random() * 20}%`,
+        size: `${15 + Math.random() * 60}px`,
+        delay: `${Math.random() * 5}s`,
+        duration: isIntro ? `${5 + Math.random() * 5}s` : `${12 + Math.random() * 15}s`
+      }));
+    };
+
+    setIntroHearts(generateHearts(30, true));
+    setMessageHearts(generateHearts(50, true));
+    setMainHearts(generateHearts(25, false));
+  }, []);
 
   const handleStart = () => {
     setStage('message');
@@ -19,6 +47,8 @@ export default function Home() {
       setStage('main');
     }, 4500);
   };
+
+  const currentIntroHearts = stage === 'message' ? messageHearts : introHearts;
 
   return (
     <div className="min-h-screen relative overflow-hidden select-none bg-black">
@@ -31,7 +61,7 @@ export default function Home() {
         )}>
           {/* Floating Hearts for Intro */}
           <div className="absolute inset-0 pointer-events-none">
-            {[...Array(stage === 'message' ? 50 : 30)].map((_, i) => (
+            {currentIntroHearts.map((heart, i) => (
               <Heart
                 key={i}
                 className={cn(
@@ -39,11 +69,11 @@ export default function Home() {
                   stage === 'message' && "text-rose-400/60"
                 )}
                 style={{
-                  left: `${Math.random() * 100}%`,
-                  top: `${100 + Math.random() * 20}%`,
-                  width: `${15 + Math.random() * 60}px`,
-                  animationDelay: `${Math.random() * 5}s`,
-                  animationDuration: `${stage === 'message' ? 5 + Math.random() * 5 : 8 + Math.random() * 10}s`
+                  left: heart.left,
+                  top: heart.top,
+                  width: heart.size,
+                  animationDelay: heart.delay,
+                  animationDuration: heart.duration
                 }}
                 fill="currentColor"
               />
@@ -115,16 +145,16 @@ export default function Home() {
 
         {/* Animated Floating Hearts Background for Main Page */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden z-10">
-          {[...Array(25)].map((_, i) => (
+          {mainHearts.map((heart, i) => (
             <Heart
               key={i}
               className="absolute text-rose-400/30 animate-float"
               style={{
-                left: `${Math.random() * 100}%`,
-                top: `${100 + Math.random() * 20}%`,
-                width: `${20 + Math.random() * 40}px`,
-                animationDelay: `${Math.random() * 8}s`,
-                animationDuration: `${12 + Math.random() * 15}s`
+                left: heart.left,
+                top: heart.top,
+                width: heart.size,
+                animationDelay: heart.delay,
+                animationDuration: heart.duration
               }}
               fill="currentColor"
             />
@@ -132,7 +162,6 @@ export default function Home() {
         </div>
 
         <main className="relative z-20 text-center space-y-6 px-4 max-w-full pt-10">
-          {/* Names with elegant tracking and uppercase style */}
           <h1 className="text-5xl md:text-8xl font-headline text-black drop-shadow-sm leading-tight animate-slide-up [animation-delay:200ms] py-4 tracking-[0.25em] uppercase mt-12">
             MUTHU | ANISH
           </h1>
@@ -140,12 +169,10 @@ export default function Home() {
           <div className="h-0.5 w-64 bg-rose-400/40 mx-auto animate-scale-in [animation-delay:400ms]" />
           
           <div className="max-w-4xl mx-auto space-y-10">
-            {/* Personalized Valentine message */}
             <p className="text-xl md:text-3xl font-headline text-rose-900 animate-slide-up [animation-delay:600ms] tracking-wide font-bold drop-shadow-sm">
               Happy Valentine's Day My Dear Sweety <br className="md:hidden" /> | I Love You Di Chinju
             </p>
             
-            {/* Nicknames list */}
             <div className="py-8 border-y border-rose-300/40 animate-slide-up [animation-delay:800ms] backdrop-blur-md bg-white/15 rounded-2xl shadow-inner">
               <p className="text-[10px] md:text-sm font-body font-bold text-black tracking-[0.45em] uppercase whitespace-nowrap overflow-x-auto no-scrollbar px-10">
                 CHINJU • SWOTHTHU • MUWTHEY • BHARIYA • VAVOO • DARLING • MINION • AZHAGI • RAKSHASHI • MILMA
