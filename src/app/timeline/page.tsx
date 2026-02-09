@@ -76,7 +76,7 @@ export default function TimelinePage() {
         <header className="mb-20 text-center animate-fade-in">
           <h1 className="text-6xl font-headline text-foreground mb-6 italic">Our Journey</h1>
           <p className="text-xl text-muted-foreground italic font-body max-w-2xl mx-auto">
-            Walking hand in hand through the beautiful story of Muthu and Anish.
+            Walking hand in hand through the beautiful of our love story.
           </p>
         </header>
 
