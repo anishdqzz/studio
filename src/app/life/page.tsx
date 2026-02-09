@@ -2,6 +2,8 @@ import { Navigation } from "@/components/Navigation";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Sparkles, Heart, ShieldCheck, Star } from "lucide-react";
+import Image from "next/image";
+import bgImage from "../Picsart_26-02-08_16-30-35-686.jpg.jpeg";
 
 export default function LifePage() {
   return (
@@ -15,9 +17,19 @@ export default function LifePage() {
           <div className="h-px w-24 bg-rose-300 mx-auto" />
         </header>
 
-        <section className="mb-20 animate-slide-up [animation-delay:200ms]">
-          <Card className="border-none shadow-2xl bg-white/80 backdrop-blur-md overflow-hidden rounded-[3rem]">
-            <CardContent className="p-12 md:p-16 text-center">
+        <section className="mb-20 animate-slide-up [animation-delay:200ms] relative group">
+          <Card className="border-none shadow-2xl bg-white/60 backdrop-blur-md overflow-hidden rounded-[3rem] relative z-10">
+            {/* Background Image for the Card Section */}
+            <div className="absolute inset-0 z-[-1] opacity-20 group-hover:opacity-30 transition-opacity duration-700">
+              <Image 
+                src={bgImage} 
+                alt="Background" 
+                fill 
+                className="object-cover"
+              />
+            </div>
+            
+            <CardContent className="p-12 md:p-16 text-center relative">
               <Heart className="w-12 h-12 text-rose-500 mx-auto mb-8 animate-pulse" fill="currentColor" />
               
               <div className="space-y-12">
@@ -43,7 +55,7 @@ export default function LifePage() {
                 </div>
               </div>
 
-              <div className="mt-16 p-8 bg-rose-50/50 rounded-2xl border border-rose-100">
+              <div className="mt-16 p-8 bg-white/40 backdrop-blur-sm rounded-2xl border border-rose-100 shadow-inner">
                 <p className="text-2xl md:text-3xl font-headline italic leading-relaxed text-rose-700">
                   "Whatever you've wished for, we will reach for it together. I won't just be a witness to your success—I will be the hand you hold as you make every one of those dreams a reality."
                 </p>
