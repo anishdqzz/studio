@@ -10,13 +10,14 @@ import photo4 from "./first meet.jpeg";
 import photo5 from "./meroon tshirt.jpeg";
 import photo6 from "./white tshirt.jpeg";
 import photo7 from "./park.jpeg";
-
+import photo8 from "./67420268_480983609141211_4699453546272129024_n.webp";
+import photo9 from "./tipus-fort-1723536054_cf625b67063dd41bea30.jpeg";
 const timelineEvents = [
   {
     date: "16/09/24",
     title: "The Day We Met",
     description: "The first time I came to meet you was at the Nenmara stand. That day, you appeared as an angel...",
-    image: "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=480983602474545"
+    image: photo8
   },
   {
     date: "10/09/2025",
@@ -64,7 +65,7 @@ const timelineEvents = [
     date: "06/02/2026",
     title: "9th Meet at Palakkad Fort meet",
     description: "Every minute you were with me was a moment I forgot about myself. We went to eat mandhi for the first time.",
-    image: "https://images.unsplash.com/photo-1573728303123-6d984b991947?q=80&w=1080"
+    image: photo9
   }
 ];
 
