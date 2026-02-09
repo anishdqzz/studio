@@ -9,9 +9,9 @@ export default function LifePage() {
       <div className="max-w-4xl mx-auto px-6">
         <header className="mb-16 text-center animate-fade-in">
           <Badge variant="outline" className="mb-4 px-4 py-1 border-primary text-primary font-bold tracking-widest uppercase">
-            A New Chapter
+            Life Chapter
           </Badge>
-          <h1 className="text-6xl font-headline text-foreground mb-6 italic">Life with You</h1>
+          <h1 className="text-6xl font-headline text-foreground mb-6 italic">Futur Goals</h1>
           <div className="h-px w-24 bg-rose-300 mx-auto" />
         </header>
 
@@ -42,7 +42,7 @@ export default function LifePage() {
                 <ShieldCheck className="w-8 h-8" />
               </div>
               <h3 className="font-headline italic text-xl mb-2">Safe Haven</h3>
-              <p className="text-muted-foreground text-sm font-body">Tenderness, protection, and a constant comfort for you.</p>
+              <p className="text-muted-foreground text-sm font-body">Thande Koode Irikkumbo Njn Sworgathil Ulla Pole Indavudo Koche.</p>
             </CardContent>
           </Card>
 
@@ -51,8 +51,8 @@ export default function LifePage() {
               <div className="w-16 h-16 bg-amber-50 text-amber-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
                 <Sparkles className="w-8 h-8" />
               </div>
-              <h3 className="font-headline italic text-xl mb-2">Helping You Fly</h3>
-              <p className="text-muted-foreground text-sm font-body">Standing beside you through every struggle and triumph.</p>
+              <h3 className="font-headline italic text-xl mb-2">I Support You Fly</h3>
+              <p className="text-muted-foreground text-sm font-body">Nee Ninde Dream And Achivement Complete Aakkan Njn Ennum Support Cheiyum Vavoo.</p>
             </CardContent>
           </Card>
 
@@ -62,13 +62,13 @@ export default function LifePage() {
                 <Star className="w-8 h-8" />
               </div>
               <h3 className="font-headline italic text-xl mb-2">Our Dreams</h3>
-              <p className="text-muted-foreground text-sm font-body">The hand you hold to make every wish a reality.</p>
+              <p className="text-muted-foreground text-sm font-body">Oru Kunj Family Athil Njn Nammande Makkal Thats Enough For Me.</p>
             </CardContent>
           </Card>
         </div>
 
         <footer className="text-center animate-fade-in [animation-delay:800ms]">
-          <p className="font-names text-4xl text-rose-500">Muthu & Chinju</p>
+          <p className="font-names text-4xl text-rose-500">Anish | Chinju</p>
           <p className="text-muted-foreground mt-2 uppercase tracking-[0.3em] text-xs">Forever & Always</p>
         </footer>
       </div>
