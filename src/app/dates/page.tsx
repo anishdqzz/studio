@@ -54,7 +54,7 @@ export default function DatesPage() {
           <Badge variant="outline" className="mb-4 px-4 py-1 border-primary text-primary font-bold">CALENDAR OF LOVE</Badge>
           <h1 className="text-6xl font-headline text-foreground mb-6 italic">Our Precious Moments</h1>
           <p className="text-xl text-muted-foreground max-w-xl mx-auto font-body">
-            Marking the days that changed our lives forever. Every date is a treasure for Muthu and Anish.
+            Marking the days that changed our lives forever. Every date is a treasure of telling our love story.
           </p>
         </header>
 
