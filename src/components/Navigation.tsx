@@ -10,7 +10,7 @@ const navItems = [
   { href: "/", label: "Home", icon: Heart },
   { href: "/gallery", label: "Gallery", icon: Image },
   { href: "/timeline", label: "Our Story", icon: History },
-  { href: "/life", label: "Life", icon: Sparkles },
+  { href: "/life", label: "Future With You", icon: Sparkles },
   { href: "/dates", label: "Special Dates", icon: Calendar },
 ];
 

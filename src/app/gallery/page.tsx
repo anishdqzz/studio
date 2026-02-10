@@ -15,7 +15,7 @@ export default function GalleryPage() {
           <Badge variant="outline" className="mb-4 px-4 py-1 border-primary text-primary font-bold">MEMORY VAULT</Badge>
           <h1 className="text-6xl font-headline text-foreground mb-6 italic">Our Captured Moments</h1>
           <p className="text-xl text-muted-foreground font-body max-w-2xl mx-auto">
-            A collection of smiles, adventures, and the beautiful journey of Muthu and Anish.
+            A collection of smiles, adventures, and the beautiful of our love journey.
           </p>
         </header>
 
