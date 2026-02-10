@@ -11,7 +11,7 @@ import { useToast } from "@/hooks/use-toast";
 import { cn } from "@/lib/utils";
 
 // Formspree Endpoint
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/mqkazpoy"; 
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xlgwgenw"; 
 
 export default function LoveLetterPage() {
   const { toast } = useToast();
