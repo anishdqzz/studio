@@ -3,7 +3,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Heart, Image, History, Calendar, ChevronUp, Sparkles, Mail, User } from "lucide-react";
+import { Heart, Image, History, Calendar, ChevronUp, Sparkles, Mail } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
 
@@ -12,7 +12,6 @@ const navItems = [
   { href: "/gallery", label: "Gallery", icon: Image },
   { href: "/timeline", label: "Our Story", icon: History },
   { href: "/life", label: "Life", icon: Sparkles },
-  { href: "/unique-man", label: "Unique", icon: User },
   { href: "/dates", label: "Special Dates", icon: Calendar },
   { href: "/love-letter", label: "Love Email", icon: Mail },
 ];
