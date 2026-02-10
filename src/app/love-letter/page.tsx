@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState, useEffect } from "react";
@@ -10,7 +9,6 @@ import { Mail, Send, Loader2, CheckCircle2, Heart, Sparkles } from "lucide-react
 import { useToast } from "@/hooks/use-toast";
 import { cn } from "@/lib/utils";
 
-// Formspree Endpoint
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/xlgwgenw"; 
 
 export default function LoveLetterPage() {
@@ -45,8 +43,6 @@ export default function LoveLetterPage() {
         body: JSON.stringify({
           message: message,
           subject: "A Special Love Letter From Chinju",
-          from_name: "Chinju",
-          to_name: "Anish"
         }),
       });
 
@@ -57,7 +53,6 @@ export default function LoveLetterPage() {
           description: "Your message has been successfully delivered to Anish.",
         });
 
-        // Reset the form after 3 seconds so you can send another
         setTimeout(() => {
           setSent(false);
           setMessage("");
@@ -80,7 +75,6 @@ export default function LoveLetterPage() {
 
   return (
     <div className="min-h-screen pb-32 pt-24 bg-gradient-to-br from-rose-50 via-white to-rose-100 relative overflow-hidden">
-      {/* Animated Floating Hearts Background */}
       {mounted && (
         <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
           {[...Array(15)].map((_, i) => (

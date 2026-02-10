@@ -18,7 +18,6 @@ export default function LifePage() {
         </header>
 
         <section className="mb-20 animate-slide-up [animation-delay:200ms] relative group rounded-[3rem] overflow-hidden shadow-2xl">
-          {/* Background Image for the Section - "Screen-like" feel */}
           <div className="absolute inset-0 z-0">
             <Image 
               src={bgImage} 

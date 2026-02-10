@@ -1,7 +1,7 @@
 import { Navigation } from "@/components/Navigation";
 import { Heart } from "lucide-react";
 import Image from "next/image";
-import bg from './Picsart_26-02-08_16-30-35-686.jpg.jpeg';
+import bg from './bg.jpeg';
 
 export default function Home() {
   return (

@@ -3,7 +3,7 @@ import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Muthu & Anish | Eternal Flame',
+  title: 'Muthu & Anish',
   description: 'A special place for the shared memories and love of Muthu and Anish.',
 };
 
