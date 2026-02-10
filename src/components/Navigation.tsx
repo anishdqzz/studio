@@ -1,8 +1,9 @@
+
 "use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Heart, Image, History, Calendar, ChevronUp, Sparkles, Mail } from "lucide-react";
+import { Heart, Image, History, Calendar, ChevronUp, Sparkles, Mail, User } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
 
@@ -11,6 +12,7 @@ const navItems = [
   { href: "/gallery", label: "Gallery", icon: Image },
   { href: "/timeline", label: "Our Story", icon: History },
   { href: "/life", label: "Life", icon: Sparkles },
+  { href: "/unique-man", label: "Unique", icon: User },
   { href: "/dates", label: "Special Dates", icon: Calendar },
   { href: "/love-letter", label: "Love Email", icon: Mail },
 ];
@@ -53,7 +55,7 @@ export function Navigation() {
       {/* Horizontal Navigation Bar centered at the bottom */}
       <div className="fixed bottom-8 left-0 right-0 z-50 flex justify-center pointer-events-none">
         <nav className={cn(
-          "px-2 sm:px-4 py-3 bg-white/70 backdrop-blur-xl border border-rose-200/50 rounded-full shadow-2xl flex items-center gap-1 sm:gap-4 transition-all duration-500 animate-fade-in pointer-events-auto"
+          "px-2 sm:px-4 py-3 bg-white/70 backdrop-blur-xl border border-rose-200/50 rounded-full shadow-2xl flex items-center gap-1 sm:gap-2 transition-all duration-500 animate-fade-in pointer-events-auto max-w-[95vw] overflow-x-auto no-scrollbar"
         )}>
           {navItems.map((item) => {
             const isActive = pathname === item.href;
@@ -63,7 +65,7 @@ export function Navigation() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "relative flex flex-col items-center justify-center transition-all duration-500 group h-10 w-10 sm:h-14 sm:w-14",
+                  "relative flex flex-col items-center justify-center transition-all duration-500 group h-10 w-10 sm:h-12 sm:w-12 flex-shrink-0",
                   isActive ? "text-white" : "text-rose-400 hover:text-rose-600"
                 )}
               >
