@@ -56,6 +56,13 @@ export default function LoveLetterPage() {
           title: "Letter Sent!",
           description: "Your message has been successfully delivered to Anish.",
         });
+
+        // Reset the form after 3 seconds so you can send another
+        setTimeout(() => {
+          setSent(false);
+          setMessage("");
+        }, 3000);
+
       } else {
         throw new Error("Failed to send");
       }
@@ -133,6 +140,7 @@ export default function LoveLetterPage() {
                 className="min-h-[350px] text-lg font-body leading-relaxed bg-white/40 border-rose-200 focus:border-rose-400 focus:ring-rose-300/50 resize-none italic shadow-inner rounded-2xl transition-all duration-300"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
+                disabled={sending || sent}
               />
               <div className="absolute top-4 right-4 text-rose-300/50 group-hover:text-rose-400 transition-colors">
                 <Heart className="w-6 h-6" />
