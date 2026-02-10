@@ -23,7 +23,7 @@ export default function LoveLetterPage() {
     if (!message) {
       toast({
         title: "Empty Message",
-        description: "Please write something for Chinju first.",
+        description: "Please write something for Anish first.",
         variant: "destructive",
       });
       return;
@@ -39,9 +39,9 @@ export default function LoveLetterPage() {
         },
         body: JSON.stringify({
           message: message,
-          subject: "A Special Love Letter for Chinju",
-          from_name: "Anish",
-          to_name: "Chinju"
+          subject: "A Special Love Letter From Chinju",
+          from_name: "Chinju",
+          to_name: "Anish"
         }),
       });
 
@@ -49,7 +49,7 @@ export default function LoveLetterPage() {
         setSent(true);
         toast({
           title: "Letter Sent!",
-          description: "Your message has been successfully delivered to Chinju.",
+          description: "Your message has been successfully delivered to Anish.",
         });
       } else {
         throw new Error("Failed to send");
@@ -72,7 +72,7 @@ export default function LoveLetterPage() {
         <header className="mb-12 text-center animate-fade-in">
           <Heart className="w-12 h-12 text-rose-500 mx-auto mb-4" fill="currentColor" />
           <h1 className="text-5xl font-headline text-foreground mb-4 italic">Love Email</h1>
-          <p className="text-lg text-muted-foreground font-body">Write something beautiful for Chinju.</p>
+          <p className="text-lg text-muted-foreground font-body">Swoththuu ma Jujujujuuuuu.</p>
         </header>
 
         <Card className="border-primary/20 shadow-2xl bg-white/80 backdrop-blur-md overflow-hidden animate-scale-in">
