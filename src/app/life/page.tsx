@@ -17,18 +17,19 @@ export default function LifePage() {
           <div className="h-px w-24 bg-rose-300 mx-auto" />
         </header>
 
-        <section className="mb-20 animate-slide-up [animation-delay:200ms] relative group">
-          <Card className="border-none shadow-2xl bg-white/60 backdrop-blur-md overflow-hidden rounded-[3rem] relative z-10">
-            {/* Background Image for the Card Section */}
-            <div className="absolute inset-0 z-[-1] opacity-20 group-hover:opacity-30 transition-opacity duration-700">
-              <Image 
-                src={bgImage} 
-                alt="Background" 
-                fill 
-                className="object-cover"
-              />
-            </div>
-            
+        <section className="mb-20 animate-slide-up [animation-delay:200ms] relative group rounded-[3rem] overflow-hidden shadow-2xl">
+          {/* Background Image for the Section - "Screen-like" feel */}
+          <div className="absolute inset-0 z-0">
+            <Image 
+              src={bgImage} 
+              alt="Background" 
+              fill 
+              className="object-cover opacity-40 group-hover:opacity-50 transition-opacity duration-700"
+            />
+            <div className="absolute inset-0 bg-white/40 backdrop-blur-[1px]" />
+          </div>
+          
+          <Card className="border-none bg-transparent relative z-10">
             <CardContent className="p-12 md:p-16 text-center relative">
               <Heart className="w-12 h-12 text-rose-500 mx-auto mb-8 animate-pulse" fill="currentColor" />
               
@@ -55,7 +56,7 @@ export default function LifePage() {
                 </div>
               </div>
 
-              <div className="mt-16 p-8 bg-white/40 backdrop-blur-sm rounded-2xl border border-rose-100 shadow-inner">
+              <div className="mt-16 p-8 bg-white/60 backdrop-blur-md rounded-2xl border border-rose-100 shadow-inner">
                 <p className="text-2xl md:text-3xl font-headline italic leading-relaxed text-rose-700">
                   "Whatever you've wished for, we will reach for it together. I won't just be a witness to your success—I will be the hand you hold as you make every one of those dreams a reality."
                 </p>
