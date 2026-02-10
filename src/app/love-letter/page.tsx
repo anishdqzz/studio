@@ -105,7 +105,7 @@ export default function LoveLetterPage() {
               ) : (
                 <Send className="w-6 h-6 mr-3" />
               )}
-              {sent ? "Sent to Her Inbox!" : "Send to Chinju"}
+              {sent ? "Sent to Anish!" : "Send to Anish"}
             </Button>
           </CardContent>
         </Card>
