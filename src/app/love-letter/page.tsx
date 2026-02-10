@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState } from "react";
@@ -36,49 +35,49 @@ export default function LoveLetterPage() {
   }
 
   return (
-    <div className="min-h-screen pb-32 pt-16 bg-background">
+    <div className="min-h-screen pb-32 pt-24 bg-gradient-to-br from-background to-secondary/30">
       <div className="max-w-4xl mx-auto px-6">
         <header className="mb-12 text-center animate-fade-in">
-          <h1 className="text-5xl font-headline text-foreground mb-4">The Love Letter Generator</h1>
-          <p className="text-lg text-muted-foreground">Draft something heartfelt and personal.</p>
+          <h1 className="text-5xl font-headline text-foreground mb-4 italic">Love Email</h1>
+          <p className="text-lg text-muted-foreground font-body">Draft something heartfelt and personal for Chinju.</p>
         </header>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="space-y-6">
-            <Card className="border-primary/20 shadow-lg">
+            <Card className="border-primary/20 shadow-lg bg-white/80 backdrop-blur-sm">
               <CardHeader>
                 <CardTitle className="font-headline italic flex items-center gap-2">
-                  <Sparkles className="w-5 h-5 text-accent" />
-                  Details for AI
+                  <Sparkles className="w-5 h-5 text-rose-500" />
+                  Details for your message
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="space-y-2">
-                  <Label htmlFor="messages">What have we talked about lately?</Label>
+                  <Label htmlFor="messages" className="font-body">What have we talked about lately?</Label>
                   <Textarea 
                     id="messages" 
-                    placeholder="e.g. Our dream trip to Italy, the funny cat we saw..."
-                    className="h-24 bg-white/50"
+                    placeholder="e.g. Our dream trip, the funny moment from earlier..."
+                    className="h-24 bg-white/50 border-rose-100"
                     value={messages}
                     onChange={(e) => setMessages(e.target.value)}
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="memories">A specific memory to mention?</Label>
+                  <Label htmlFor="memories" className="font-body">A specific memory to mention?</Label>
                   <Textarea 
                     id="memories" 
-                    placeholder="e.g. Our rainy walk in Central Park, the first time we said I love you..."
-                    className="h-24 bg-white/50"
+                    placeholder="e.g. The first time we met at Nenmara stand..."
+                    className="h-24 bg-white/50 border-rose-100"
                     value={memories}
                     onChange={(e) => setMemories(e.target.value)}
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="tone">Tone of the letter</Label>
+                  <Label htmlFor="tone" className="font-body">Tone of the letter</Label>
                   <Input 
                     id="tone" 
                     placeholder="Romantic, poetic, funny, short..."
-                    className="bg-white/50"
+                    className="bg-white/50 border-rose-100"
                     value={tone}
                     onChange={(e) => setTone(e.target.value)}
                   />
@@ -88,10 +87,10 @@ export default function LoveLetterPage() {
                 <Button 
                   onClick={handleGenerate} 
                   disabled={loading || !messages || !memories}
-                  className="w-full bg-accent hover:bg-accent/90 text-white font-body"
+                  className="w-full bg-rose-500 hover:bg-rose-600 text-white font-body"
                 >
                   {loading ? <Loader2 className="w-4 h-4 animate-spin mr-2" /> : <Mail className="w-4 h-4 mr-2" />}
-                  Generate Love Letter
+                  Generate Love Email
                 </Button>
               </CardFooter>
             </Card>
@@ -99,19 +98,19 @@ export default function LoveLetterPage() {
 
           <div className="space-y-6">
             {result ? (
-              <Card className="border-accent/20 shadow-xl bg-white/80 animate-fade-in min-h-[400px]">
+              <Card className="border-accent/20 shadow-xl bg-white/80 animate-fade-in min-h-[400px] backdrop-blur-sm">
                 <CardHeader className="text-center border-b border-muted">
-                  <Heart className="w-8 h-8 text-accent mx-auto mb-2" fill="currentColor" />
-                  <CardTitle className="font-headline italic text-2xl">A Letter for You</CardTitle>
+                  <Heart className="w-8 h-8 text-rose-500 mx-auto mb-2" fill="currentColor" />
+                  <CardTitle className="font-headline italic text-2xl">A Message for You</CardTitle>
                 </CardHeader>
                 <CardContent className="pt-8 px-8 whitespace-pre-wrap font-body text-foreground leading-relaxed italic">
                   {result}
                 </CardContent>
               </Card>
             ) : (
-              <div className="h-full flex flex-col items-center justify-center text-center p-12 border-2 border-dashed border-primary/20 rounded-2xl text-muted-foreground bg-primary/5">
-                <Mail className="w-12 h-12 mb-4 opacity-30" />
-                <p>Fill in the details and generate a letter to see it appear here.</p>
+              <div className="h-full flex flex-col items-center justify-center text-center p-12 border-2 border-dashed border-rose-200 rounded-2xl text-muted-foreground bg-white/30 backdrop-blur-sm">
+                <Mail className="w-12 h-12 mb-4 opacity-30 text-rose-400" />
+                <p className="font-body italic text-lg">Fill in the details and generate an email to see it appear here.</p>
               </div>
             )}
           </div>
