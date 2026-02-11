@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -91,18 +90,4 @@
 
 .animate-slide-up {
   animation: slide-up 0.8s ease-out forwards;
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-.typing-text {
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 0;
-  animation: typing 4s steps(50, end) forwards;
-  animation-delay: 1s;
 }

@@ -1,4 +1,3 @@
-
 import { Navigation } from "@/components/Navigation";
 import { Heart } from "lucide-react";
 import Image from "next/image";
@@ -48,9 +47,9 @@ export default function Home() {
         <div className="h-px w-48 bg-rose-400/40 mx-auto animate-scale-in [animation-delay:400ms]" />
         
         <div className="max-w-4xl mx-auto space-y-8">
-          {/* Personalized Valentine message with Typing Animation */}
+          {/* Personalized Valentine message */}
           <div className="flex justify-center overflow-hidden">
-            <p className="text-xl md:text-2xl font-headline text-rose-800 tracking-wide font-bold drop-shadow-sm typing-text">
+            <p className="text-xl md:text-2xl font-headline text-rose-800 tracking-wide font-bold drop-shadow-sm">
               Happy Valentines Day My Dear Sweety | I Love You Di Chinju
             </p>
           </div>
