@@ -51,7 +51,7 @@ export default function Home() {
           {/* Personalized Valentine message with Typing Animation */}
           <div className="flex justify-center overflow-hidden">
             <p className="text-xl md:text-2xl font-headline text-rose-800 tracking-wide font-bold drop-shadow-sm typing-text">
-              Happy Velantines Day My Dear Sweety | I Love You Di Chinju
+              Happy Valentines Day My Dear Sweety | I Love You Di Chinju
             </p>
           </div>
           
