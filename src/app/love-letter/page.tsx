@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Navigation } from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
@@ -22,8 +22,8 @@ export default function LoveLetterPage() {
     setMounted(true);
   }, []);
 
-  async function handleSendEmail() {
-    if (!message) {
+  const handleSendEmail = useCallback(async () => {
+    if (!message.trim()) {
       toast({
         title: "Empty Message",
         description: "Please write something for Anish first.",
@@ -53,10 +53,11 @@ export default function LoveLetterPage() {
           description: "Your message has been successfully delivered to Anish.",
         });
 
+        // Clear and reset states after a short delay
         setTimeout(() => {
           setSent(false);
           setMessage("");
-        }, 3000);
+        }, 2500);
 
       } else {
         throw new Error("Failed to send");
@@ -68,10 +69,11 @@ export default function LoveLetterPage() {
         description: "Could not send the email. Please check your connection.",
         variant: "destructive",
       });
+      setSent(false); // Ensure button isn't stuck if it failed
     } finally {
       setSending(false);
     }
-  }
+  }, [message, toast]);
 
   return (
     <div className="min-h-screen pb-32 pt-24 bg-gradient-to-br from-rose-50 via-white to-rose-100 relative overflow-hidden">
@@ -143,9 +145,9 @@ export default function LoveLetterPage() {
             
             <Button 
               onClick={handleSendEmail} 
-              disabled={sending || sent || !message}
+              disabled={sending || sent || !message.trim()}
               className={cn(
-                "w-full py-8 text-xl font-body transition-all duration-700 shadow-xl rounded-2xl transform hover:scale-[1.02] active:scale-95",
+                "w-full py-8 text-xl font-body transition-all duration-500 shadow-xl rounded-2xl transform active:scale-95 flex items-center justify-center",
                 sent 
                   ? "bg-green-500 hover:bg-green-600 text-white" 
                   : "bg-gradient-to-r from-rose-500 to-pink-600 hover:from-rose-600 hover:to-pink-700 text-white border-b-4 border-rose-800/20"
