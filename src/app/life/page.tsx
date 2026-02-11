@@ -3,9 +3,11 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Sparkles, Heart, ShieldCheck, Star } from "lucide-react";
 import Image from "next/image";
-import bgImage from "../Picsart_26-02-08_16-30-35-686.jpg.jpeg";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export default function LifePage() {
+  const bgImage = PlaceHolderImages.find(img => img.id === 'gallery8')?.imageUrl || "https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=2070";
+
   return (
     <div className="min-h-screen pb-40 pt-24 bg-gradient-to-b from-rose-50 to-white font-body">
       <div className="max-w-4xl mx-auto px-6 text-center">
@@ -24,6 +26,7 @@ export default function LifePage() {
               alt="Background" 
               fill 
               className="object-cover opacity-40 group-hover:opacity-50 transition-opacity duration-700"
+              data-ai-hint="romantic sunset"
             />
             <div className="absolute inset-0 bg-white/40 backdrop-blur-[1px]" />
           </div>
@@ -32,24 +35,24 @@ export default function LifePage() {
             <CardContent className="p-12 md:p-16 text-center relative">
               <Heart className="w-12 h-12 text-rose-500 mx-auto mb-8 animate-pulse" fill="currentColor" />
               
-              <div className="space-y-12">
+              <div className="space-y-12 text-foreground font-body">
                 <div>
                   <h2 className="text-3xl font-headline text-pink-500 font-bold mb-4">Ente Onnayulla Jeevithathinu</h2>
-                  <p className="text-lg md:text-xl font-body leading-relaxed text-foreground text-left md:text-center">
+                  <p className="text-lg md:text-xl leading-relaxed text-left md:text-center">
                     Nammal onnichu thudangaan pokunna aa puthiya jeevithathil, ninne njan ponnu pole nokkum. Ente lokathile ettavum valiya nidhi neeyaanu. Oru pacha kunjine engane snehathode pothinju pidikkumo, athe pole njan ninne karuthalode ente cherthu pidikkum. Ninakkoru sankadam varaan njan sammathikkilla, ninte oru thulli kannuneer polum pozhiyatha reethiyil njan ninne kaatholum.
                   </p>
                 </div>
 
                 <div>
                   <h2 className="text-3xl font-headline text-pink-500 font-bold mb-4">Ninte Swapnangalkku Kootayi</h2>
-                  <p className="text-lg md:text-xl font-body leading-relaxed text-foreground text-left md:text-center">
+                  <p className="text-lg md:text-xl leading-relaxed text-left md:text-center">
                     Nee kaanunna oro swapnavum, ninte manasilulla oro agrahangalum nijaarthathilekk ethikkaan njan ninte koodeyundaakum. Nee thalarumpol njan ninte thunaiyaayi nilkkum. Ninte oro vijayathilum namukkonnichu chirikkaam. Ninte swapnangal ellam ninte koode ninnu achieve cheyyikkaan ente ee kaikal eppozhum ninte koodeyundaakum.
                   </p>
                 </div>
 
                 <div>
                   <h2 className="text-3xl font-headline text-pink-500 font-bold mb-4">Jeevithakaalam Muzhuvan</h2>
-                  <p className="text-lg md:text-xl font-body leading-relaxed text-foreground text-left md:text-center">
+                  <p className="text-lg md:text-xl leading-relaxed text-left md:text-center">
                     Nee ente mathramaanu. Lokathile ella premavum njan ninakku mathramayi tharum. Namukkonnichu jeevikkam, maranam vare. Oro divasavum njan ninne puthiya reethiyil premikkum. Nammude aa puthiya jeevithathile oro raathriyum ninte mudiizhakalil thalodi ninne urakki, ninte aa punchiri kandu thanne njan oro prabhathavum unarum. Jeevithathinte avasana shwasam vare, ente kayyile ninte viralukal korthu vechu namukku ee lokathil onnichu jeevikkam.
                   </p>
                 </div>

@@ -1,19 +1,21 @@
 import { Navigation } from "@/components/Navigation";
 import { Heart } from "lucide-react";
 import Image from "next/image";
-import bg from './bg.jpeg';
 
 export default function Home() {
+  const bgUrl = "https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=2070";
+
   return (
     <div className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden select-none bg-rose-50">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src={bg}
+          src={bgUrl}
           alt="Background"
           fill
           priority
           className="object-cover"
+          data-ai-hint="romantic background"
         />
         <div className="absolute inset-0 bg-white/40 backdrop-blur-[2px]" />
       </div>
