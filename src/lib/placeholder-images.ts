@@ -14,6 +14,12 @@ import image11 from './IMG-20260127-WA0010.jpg.jpeg';
 import image12 from './IMG_20251112_130039 (2).png';
 import image13 from './IMG_20240903_164945_031.webp';
 
+// Timeline images to be added to gallery
+import image14 from '../app/timeline/birthday.jpeg';
+import image15 from '../app/timeline/park.jpeg';
+import image16 from '../app/timeline/first meet.jpeg';
+import image17 from '../app/timeline/kummattii.jpeg';
+
 export type ImagePlaceholder = {
   id: string;
   description: string;
@@ -36,6 +42,10 @@ const mediaMap: Record<string, any> = {
   gallery11: image11,
   gallery12: image12,
   gallery13: image13,
+  gallery14: image14,
+  gallery15: image15,
+  gallery16: image16,
+  gallery17: image17,
 };
 
 export const PlaceHolderImages: ImagePlaceholder[] = data.placeholderImages.map(img => ({
