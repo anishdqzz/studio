@@ -118,6 +118,41 @@
       "imageUrl": "",
       "imageHint": "festival smiles",
       "type": "image"
+    },
+    {
+      "id": "gallery18",
+      "description": "A new memory captured",
+      "imageUrl": "",
+      "imageHint": "romantic memory",
+      "type": "image"
+    },
+    {
+      "id": "gallery19",
+      "description": "Smiling together",
+      "imageUrl": "",
+      "imageHint": "happy couple",
+      "type": "image"
+    },
+    {
+      "id": "gallery20",
+      "description": "Unforgettable times",
+      "imageUrl": "",
+      "imageHint": "couple together",
+      "type": "image"
+    },
+    {
+      "id": "gallery21",
+      "description": "Pure happiness",
+      "imageUrl": "",
+      "imageHint": "joyful couple",
+      "type": "image"
+    },
+    {
+      "id": "gallery22",
+      "description": "Our journey continues",
+      "imageUrl": "",
+      "imageHint": "forever love",
+      "type": "image"
     }
   ]
 }

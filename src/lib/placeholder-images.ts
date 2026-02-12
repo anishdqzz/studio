@@ -14,11 +14,18 @@ import image11 from './IMG-20260127-WA0010.jpg.jpeg';
 import image12 from './IMG_20251112_130039 (2).png';
 import image13 from './IMG_20240903_164945_031.webp';
 
-// Timeline images to be added to gallery
+// Timeline images
 import image14 from '../app/timeline/birthday.jpeg';
 import image15 from '../app/timeline/park.jpeg';
 import image16 from '../app/timeline/first meet.jpeg';
 import image17 from '../app/timeline/kummattii.jpeg';
+
+// New user-added gallery images
+import galleryImg18 from '../app/gallery/IMG-20260211-WA0007.jpg.jpeg';
+import galleryImg19 from '../app/gallery/IMG-20260212-WA0061.jpg.jpeg';
+import galleryImg20 from '../app/gallery/IMG-20260212-WA0117.jpg.jpeg';
+import galleryImg21 from '../app/gallery/IMG-20260212-WA0131.jpg (1).jpeg';
+import galleryImg22 from '../app/gallery/IMG-20260212-WA0131.jpg.jpeg';
 
 export type ImagePlaceholder = {
   id: string;
@@ -46,6 +53,11 @@ const mediaMap: Record<string, any> = {
   gallery15: image15,
   gallery16: image16,
   gallery17: image17,
+  gallery18: galleryImg18,
+  gallery19: galleryImg19,
+  gallery20: galleryImg20,
+  gallery21: galleryImg21,
+  gallery22: galleryImg22,
 };
 
 export const PlaceHolderImages: ImagePlaceholder[] = data.placeholderImages.map(img => ({
