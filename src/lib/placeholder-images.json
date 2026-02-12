@@ -113,13 +113,6 @@
       "type": "image"
     },
     {
-      "id": "gallery17",
-      "description": "Kunissery Kummatti memories",
-      "imageUrl": "",
-      "imageHint": "festival smiles",
-      "type": "image"
-    },
-    {
       "id": "gallery18",
       "description": "A new memory captured",
       "imageUrl": "",
@@ -145,13 +138,6 @@
       "description": "Pure happiness",
       "imageUrl": "",
       "imageHint": "joyful couple",
-      "type": "image"
-    },
-    {
-      "id": "gallery22",
-      "description": "Our journey continues",
-      "imageUrl": "",
-      "imageHint": "forever love",
       "type": "image"
     }
   ]
