@@ -22,7 +22,7 @@ const specialDates = [
   },
   {
     title: "Chinju's Birthday",
-    date: "September 12",
+    date: "November 12",
     type: "Celebration",
     icon: Gift,
     color: "bg-blue-100 text-blue-600",
